@@ -6,11 +6,17 @@ const COOKIE_NAME = "admin_session";
 const SESSION_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
 function getAdminSecret(): string {
-  return process.env.ADMIN_SECRET || process.env.ADMIN_PASSWORD || "changeme";
+  const fromEnv = process.env.ADMIN_SECRET?.trim() || process.env.ADMIN_PASSWORD?.trim();
+  if (fromEnv) return fromEnv;
+  if (process.env.NODE_ENV === "development") return "changeme";
+  throw new Error("ADMIN_PASSWORD o ADMIN_SECRET debe estar configurado.");
 }
 
 export function getAdminPassword(): string {
-  return process.env.ADMIN_PASSWORD || "changeme";
+  const fromEnv = process.env.ADMIN_PASSWORD?.trim();
+  if (fromEnv) return fromEnv;
+  if (process.env.NODE_ENV === "development") return "changeme";
+  throw new Error("ADMIN_PASSWORD debe estar configurado.");
 }
 
 function signPayload(payload: string): string {

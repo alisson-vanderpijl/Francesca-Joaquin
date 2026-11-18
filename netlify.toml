@@ -3,6 +3,8 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  # Next embebe vars de servidor en el bundle; el scan de Netlify no debe bloquearlas.
+  SECRETS_SCAN_OMIT_KEYS = "ADMIN_PASSWORD,ADMIN_SECRET,DATABASE_URL"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"

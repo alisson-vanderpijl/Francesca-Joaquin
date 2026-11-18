@@ -67,6 +67,11 @@ export type RSVPData = {
   phone?: string;
 };
 
+export type StoredRSVP = RSVPData & {
+  id: string;
+  createdAt: string;
+};
+
 export type WeddingEvent = {
   id: string;
   title: string;
