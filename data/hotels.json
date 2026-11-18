@@ -1,0 +1,51 @@
+{
+  "hotels": [
+    {
+      "id": "hotel-intercontinental",
+      "name": "Hotel InterContinental Lima",
+      "category": "hotel",
+      "district": "Miraflores",
+      "imageLabel": "Hotel InterContinental Lima",
+      "imageUrl": "/Images/hotel-intercontinental.webp",
+      "description": "Varias habitaciones con vista al mar, cerca de restaurantes y vida nocturna. Al reservar, contacte a Mijail Meza Arenas (WhatsApp +51 986 662 859, reservas.limha@r-hr.com) y mencione La Boda SOUZA-VILLANUEVA.",
+      "roomRate": "Desde USD 260 Hasta USD 565",
+      "address": "Mal. de la Reserva 751, Miraflores 15074",
+      "phone": "+51 986 662 859",
+      "websiteUrl": "https://www.ihg.com/intercontinental/hotels/us/en/lima/limha/hoteldetail",
+      "googleMapsUrl": "https://maps.google.com/?q=Hotel+InterContinental+Lima",
+      "priceLevel": 4
+    },
+    {
+      "id": "hotel-indigo",
+      "name": "Hotel Indigo Lima Miraflores",
+      "category": "hotel",
+      "district": "Miraflores",
+      "imageLabel": "Hotel Indigo Miraflores",
+      "imageUrl": "/Images/hotel-indigo.webp",
+      "description": "Excelente opción en Miraflores para estar cerca de todo; conectado internamente con el Hotel InterContinental. Al reservar, contacte a Mijail Meza Arenas (WhatsApp +51 986 662 859, reservas.limha@r-hr.com) y mencione La Boda SOUZA-VILLANUEVA.",
+      "roomRate": "Desde USD 140 Hasta USD 265",
+      "address": "Calle Alcanfores 1332, Miraflores 15074",
+      "phone": "+51 986 662 859",
+      "websiteUrl": "https://www.ihg.com/hotelindigo/hotels/us/en/lima/limin/hoteldetail",
+      "googleMapsUrl": "https://maps.google.com/?q=Hotel+Indigo+Lima+Miraflores",
+      "priceLevel": 3
+    },
+    {
+      "id": "hotel-ibis-larco",
+      "name": "Hotel ibis Lima Larco Miraflores",
+      "category": "hotel",
+      "district": "Miraflores",
+      "imageLabel": "Hotel ibis Larco Miraflores",
+      "imageUrl": "/Images/hotel-ibis-larco.webp",
+      "description": "Hotel tres estrellas en Miraflores con excelente ubicación, muy cerca del InterContinental e Indigo.",
+      "roomRate": "Desde USD 60",
+      "address": "Av. José Larco 1140, Miraflores 15074",
+      "phone": "+51 (01) 6348888",
+      "websiteUrl": "https://all.accor.com",
+      "googleMapsUrl": "https://maps.google.com/?q=ibis+Lima+Larco+Miraflores",
+      "priceLevel": 1
+    }
+  ],
+  "hotelDistricts": ["Todos", "Miraflores"],
+  "accommodationTypes": ["Todos", "Hotel"]
+}

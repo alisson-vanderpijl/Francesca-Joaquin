@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ourWedding",
+    "items": [
+      {
+        "id": "itinerary",
+        "href": "/guide/itinerary"
+      },
+      {
+        "id": "wedding",
+        "href": "/guide/wedding"
+      },
+      {
+        "id": "giftRegistry",
+        "href": "/guide/gift-registry"
+      }
+    ]
+  },
+  {
+    "id": "guestGuide",
+    "items": [
+      {
+        "id": "stay",
+        "href": "/guide/stay"
+      },
+      {
+        "id": "eatDrink",
+        "href": "/guide/eat-drink"
+      },
+      {
+        "id": "getReady",
+        "href": "/guide/get-ready"
+      },
+      {
+        "id": "health",
+        "href": "/guide/health"
+      },
+      {
+        "id": "exploreLima",
+        "href": "/guide/explore-lima"
+      },
+      {
+        "id": "explorePeru",
+        "href": "/guide/explore-peru"
+      },
+      {
+        "id": "map",
+        "href": "/guide/map"
+      },
+      {
+        "id": "practicalInfo",
+        "href": "/guide/practical-information"
+      }
+    ]
+  }
+]

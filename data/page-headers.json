@@ -1,0 +1,34 @@
+{
+  "stay": {
+    "title": "Hospedaje",
+    "subtitle": "Para facilitar su estancia, hemos reservado bloques de habitaciones con tarifas especiales en 2 hoteles y les sugerimos un tercer hotel también recomendado pero con tarifas un poco más económicas. A continuación, encontrará los detalles de cada opción disponible. Para confirmar su reserva, le rogamos que se ponga en contacto directamente con el hotel de su elección. Una vez completado el proceso, le agradeceríamos que nos enviara un correo electrónico con las fechas de su estancia y el nombre del hotel donde se aloja. Quedamos a su disposición para cualquier consulta adicional."
+  },
+  "eatDrink": {
+    "title": "Gastronomía",
+    "subtitle": "Reservar con anticipación es muy recomendable en los restaurantes más populares de Lima, especialmente para cena y fines de semana."
+  },
+  "getReady": {
+    "title": "Dónde arreglarse",
+    "subtitle": "Salones, spas y barberías para arreglarse antes del matrimonio. Reserva con anticipación."
+  },
+  "health": {
+    "title": "Salud y emergencias",
+    "subtitle": "Contactos de confianza para emergencias médicas, farmacias y hospitales cerca de Miraflores y San Isidro."
+  },
+  "practicalInfo": {
+    "title": "Información práctica",
+    "subtitle": "Moneda, clima, electricidad y otros datos útiles para disfrutar Lima con tranquilidad."
+  },
+  "exploreLima": {
+    "title": "Explora Lima",
+    "subtitle": "Actividades y lugares imperdibles en la capital peruana — desde el centro histórico hasta los distritos costeros."
+  },
+  "explorePeru": {
+    "title": "Explore Peru",
+    "subtitle": "Si tienes tiempo extra, Perú ofrece algunos de los destinos más extraordinarios del mundo. Estas son sugerencias para extender tu viaje."
+  },
+  "map": {
+    "title": "Mapa",
+    "subtitle": "Hemos preparado un mapa con todos los lugares recomendados en esta guía — hoteles, restaurantes, salones y puntos de interés en Lima."
+  }
+}

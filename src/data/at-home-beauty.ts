@@ -1,0 +1,35 @@
+import type { AtHomeBeautyProvider } from "@/types";
+
+/** Mock data — replace with real providers before launch */
+export const atHomeBeautyProviders: AtHomeBeautyProvider[] = [
+  {
+    id: "at-home-1",
+    name: "[Maquillador/a Placeholder — Ana]",
+    phone: "+51 XXX XXX XXX",
+    services: [
+      "Maquillaje social y de eventos",
+      "Maquillaje de novia",
+      "Prueba de maquillaje previa",
+    ],
+  },
+  {
+    id: "at-home-2",
+    name: "[Peinador/a Placeholder — Carlos]",
+    phone: "+51 XXX XXX XXX",
+    services: [
+      "Peinados para eventos",
+      "Recogidos y styling",
+      "Asesoría de look para la boda",
+    ],
+  },
+  {
+    id: "at-home-3",
+    name: "[Maquillaje & Peinado Placeholder — Studio]",
+    phone: "+51 XXX XXX XXX",
+    services: [
+      "Maquillaje y peinado a domicilio",
+      "Servicio para damas de honor e invitadas",
+      "Coordinación para grupos",
+    ],
+  },
+];

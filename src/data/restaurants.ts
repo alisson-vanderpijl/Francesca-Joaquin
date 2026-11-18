@@ -1,0 +1,480 @@
+import type { Restaurant } from "@/types";
+
+export const restaurants: Restaurant[] = [
+  {
+    "id": "la-mar",
+    "name": "La Mar",
+    "category": "restaurant",
+    "imageUrl": "/Images/restaurant-la-mar.jpg",
+    "imageLabel": "La Mar",
+    "description": "Cevichería icónica de Gastón Acurio (#26 Latin America's 50 Best 2025). Mejor para almuerzo.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Mariscos",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=La%20Mar%20Lima"
+  },
+  {
+    "id": "el-mercado",
+    "name": "El Mercado",
+    "category": "restaurant",
+    "imageUrl": "/Images/restaurant-el-mercado.jpg",
+    "imageLabel": "El Mercado",
+    "description": "Mariscos frescos y sabores peruanos en ambiente al aire libre.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Mariscos",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=El%20Mercado%20Lima"
+  },
+  {
+    "id": "isolina",
+    "name": "Isolina Taberna Peruana",
+    "category": "restaurant",
+    "imageUrl": "/Images/restaurant-isolina.jpg",
+    "imageLabel": "Isolina Taberna Peruana",
+    "description": "Criollo limeño clásico en porciones generosas.",
+    "address": "Barranco, Lima",
+    "district": "Barranco",
+    "cuisineType": "Peruana",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Isolina%20Taberna%20Peruana%20Lima"
+  },
+  {
+    "id": "huaca-restaurant",
+    "name": "Huaca Pucllana Restaurant",
+    "category": "restaurant",
+    "imageUrl": "/Images/restaurant-huaca-pucllana.jpg",
+    "imageLabel": "Huaca Pucllana Restaurant",
+    "description": "Cena con vista a las ruinas iluminadas de Huaca Pucllana.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Peruana",
+    "ambiance": "Romántico",
+    "googleMapsUrl": "https://maps.google.com/?q=Huaca%20Pucllana%20Restaurant%20Lima"
+  },
+  {
+    "id": "canta-rana",
+    "name": "Canta Rana",
+    "category": "restaurant",
+    "imageUrl": "/Images/restaurant-canta-rana.jpg",
+    "imageLabel": "Canta Rana",
+    "description": "Ceviche y mariscos en ambiente local y relajado.",
+    "address": "Barranco, Lima",
+    "district": "Barranco",
+    "cuisineType": "Mariscos",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Canta%20Rana%20Lima"
+  },
+  {
+    "id": "panchita",
+    "name": "Panchita",
+    "category": "restaurant",
+    "imageUrl": "/Images/restaurant-panchita.jpg",
+    "imageLabel": "Panchita",
+    "description": "Comfort food peruano, anticuchos y sabores clásicos.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Peruana",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Panchita%20Lima"
+  },
+  {
+    "id": "rafael",
+    "name": "Rafael",
+    "category": "restaurant",
+    "description": "Alta cocina peruana con influencias mediterráneas.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Internacional",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Rafael%20Lima"
+  },
+  {
+    "id": "fiesta",
+    "name": "Fiesta",
+    "category": "restaurant",
+    "description": "Cocina del norte del Perú por el chef Héctor Solís.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Peruana",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Fiesta%20Lima"
+  },
+  {
+    "id": "cosme",
+    "name": "Cosme Restaurante y Bar",
+    "category": "restaurant",
+    "description": "#9 Latin America's 50 Best 2025. Cena creativa y cócteles.",
+    "address": "San Isidro, Lima",
+    "district": "San Isidro",
+    "cuisineType": "Peruana",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Cosme%20Restaurante%20y%20Bar%20Lima"
+  },
+  {
+    "id": "mayta",
+    "name": "MAYTA",
+    "category": "restaurant",
+    "imageUrl": "/Images/restaurant-mayta.png",
+    "imageLabel": "MAYTA",
+    "description": "#39 World's 50 Best 2025. Cocina peruana contemporánea.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Peruana",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=MAYTA%20Lima"
+  },
+  {
+    "id": "merito",
+    "name": "Mérito",
+    "category": "restaurant",
+    "description": "#4 Latin America's 50 Best 2025. Cocina creativa íntima.",
+    "address": "Barranco, Lima",
+    "district": "Barranco",
+    "cuisineType": "Peruana",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=M%C3%A9rito%20Lima"
+  },
+  {
+    "id": "siete",
+    "name": "Siete",
+    "category": "restaurant",
+    "description": "Cocina de temporada y ambiente animado.",
+    "address": "Barranco, Lima",
+    "district": "Barranco",
+    "cuisineType": "Internacional",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Siete%20Lima"
+  },
+  {
+    "id": "piedra",
+    "name": "Piedra",
+    "category": "restaurant",
+    "description": "Cocina contemporánea con menú cambiante.",
+    "address": "Surquillo, Lima",
+    "district": "Surquillo",
+    "cuisineType": "Internacional",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Piedra%20Lima"
+  },
+  {
+    "id": "astrid-gaston",
+    "name": "Astrid & Gastón",
+    "category": "restaurant",
+    "description": "Casa Moreyra: referencia de la gastronomía peruana.",
+    "address": "San Isidro, Lima",
+    "district": "San Isidro",
+    "cuisineType": "Peruana",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Astrid%20%26%20Gast%C3%B3n%20Lima"
+  },
+  {
+    "id": "museo-larco-restaurant",
+    "name": "Museo Larco Restaurant",
+    "category": "restaurant",
+    "description": "Almuerzo o cena en los jardines del museo.",
+    "address": "Pueblo Libre, Lima",
+    "district": "Pueblo Libre",
+    "cuisineType": "Peruana",
+    "ambiance": "Romántico",
+    "googleMapsUrl": "https://maps.google.com/?q=Museo%20Larco%20Restaurant%20Lima"
+  },
+  {
+    "id": "central",
+    "name": "Central",
+    "category": "restaurant",
+    "description": "World's Best Restaurant 2023. Reserva indispensable.",
+    "address": "Barranco, Lima",
+    "district": "Barranco",
+    "cuisineType": "Peruana",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Central%20Lima"
+  },
+  {
+    "id": "kjolle",
+    "name": "Kjolle",
+    "category": "restaurant",
+    "description": "#2 Latin America's 50 Best 2025.",
+    "address": "Barranco, Lima",
+    "district": "Barranco",
+    "cuisineType": "Peruana",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Kjolle%20Lima"
+  },
+  {
+    "id": "maido",
+    "name": "Maido",
+    "category": "restaurant",
+    "description": "#1 World's 50 Best 2025. Menú degustación Nikkei.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Nikkei",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Maido%20Lima"
+  },
+  {
+    "id": "osaka",
+    "name": "Osaka",
+    "category": "restaurant",
+    "description": "Nikkei sofisticado.",
+    "address": "San Isidro, Lima",
+    "district": "San Isidro",
+    "cuisineType": "Nikkei",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Osaka%20Lima"
+  },
+  {
+    "id": "tomo",
+    "name": "Tomo",
+    "category": "restaurant",
+    "description": "Cocina japonesa contemporánea.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Japonesa",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Tomo%20Lima"
+  },
+  {
+    "id": "matsuei",
+    "name": "Matsuei",
+    "category": "restaurant",
+    "description": "Omakase íntimo.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Japonesa",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Matsuei%20Lima"
+  },
+  {
+    "id": "charrua",
+    "name": "Charrua",
+    "category": "restaurant",
+    "description": "Carnes premium estilo parrilla uruguaya.",
+    "address": "La Molina, Lima",
+    "district": "La Molina",
+    "cuisineType": "Parrilla",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Charrua%20Lima"
+  },
+  {
+    "id": "carnal",
+    "name": "Carnal",
+    "category": "restaurant",
+    "description": "Steakhouse elegante.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Parrilla",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Carnal%20Lima"
+  },
+  {
+    "id": "osso",
+    "name": "Osso",
+    "category": "restaurant",
+    "description": "Carnes y cocina al fuego.",
+    "address": "San Isidro, Lima",
+    "district": "San Isidro",
+    "cuisineType": "Parrilla",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Osso%20Lima"
+  },
+  {
+    "id": "don-eduardo",
+    "name": "Don Eduardo",
+    "category": "restaurant",
+    "description": "Cortes peruanos premium madurados en casa.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Parrilla",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Don%20Eduardo%20Lima"
+  },
+  {
+    "id": "rocco",
+    "name": "Rocco",
+    "category": "restaurant",
+    "description": "Pasta italiana contemporánea de Rafael Osterling.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Italiana",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Rocco%20Lima"
+  },
+  {
+    "id": "papagiani",
+    "name": "Papagiani",
+    "category": "restaurant",
+    "description": "Pasta, pizza y cocina italiana clásica.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Italiana",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Papagiani%20Lima"
+  },
+  {
+    "id": "troppo",
+    "name": "Troppo",
+    "category": "restaurant",
+    "description": "Italiana refinada y pastas artesanales.",
+    "address": "San Isidro, Lima",
+    "district": "San Isidro",
+    "cuisineType": "Italiana",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Troppo%20Lima"
+  },
+  {
+    "id": "pan-chola",
+    "name": "Pan de la Chola",
+    "category": "restaurant",
+    "description": "Panadería artesanal, brunch y café.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Cafetería",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Pan%20de%20la%20Chola%20Lima"
+  },
+  {
+    "id": "ana-avellana",
+    "name": "Ana Avellana",
+    "category": "restaurant",
+    "description": "Café y repostería casera.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Cafetería",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Ana%20Avellana%20Lima"
+  },
+  {
+    "id": "lila",
+    "name": "Lila",
+    "category": "restaurant",
+    "description": "All-day dining en Miguel Dasso.",
+    "address": "San Isidro, Lima",
+    "district": "San Isidro",
+    "cuisineType": "Cafetería",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Lila%20Lima"
+  },
+  {
+    "id": "demo",
+    "name": "Demo",
+    "category": "restaurant",
+    "description": "Panadería y café del equipo de Mérito.",
+    "address": "Barranco, Lima",
+    "district": "Barranco",
+    "cuisineType": "Cafetería",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Demo%20Lima"
+  },
+  {
+    "id": "crem-clem",
+    "name": "Crem dela Crem",
+    "category": "restaurant",
+    "description": "Helado artesanal.",
+    "address": "Barranco, Lima",
+    "district": "Barranco",
+    "cuisineType": "Heladería",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Crem%20dela%20Crem%20Lima"
+  },
+  {
+    "id": "anacapri",
+    "name": "Anacapri Gelateria Artigianale",
+    "category": "restaurant",
+    "description": "Gelato artesanal italiano.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Heladería",
+    "ambiance": "Casual",
+    "googleMapsUrl": "https://maps.google.com/?q=Anacapri%20Gelateria%20Artigianale%20Lima"
+  },
+  {
+    "id": "ayahuasca",
+    "name": "Ayahuasca",
+    "category": "restaurant",
+    "description": "Cocteles de pisco en casona restaurada.",
+    "address": "Barranco, Lima",
+    "district": "Barranco",
+    "cuisineType": "Bar",
+    "ambiance": "Bar",
+    "googleMapsUrl": "https://maps.google.com/?q=Ayahuasca%20Lima"
+  },
+  {
+    "id": "amador",
+    "name": "Amador",
+    "category": "restaurant",
+    "description": "Cócteles y noche elegante; reservar.",
+    "address": "San Isidro, Lima",
+    "district": "San Isidro",
+    "cuisineType": "Bar",
+    "ambiance": "Bar",
+    "googleMapsUrl": "https://maps.google.com/?q=Amador%20Lima"
+  },
+  {
+    "id": "sastreria-martinez",
+    "name": "Sastrería Martínez",
+    "category": "restaurant",
+    "description": "#33 World's 50 Best Bars. Speakeasy; reservar.",
+    "address": "Miraflores, Lima",
+    "district": "Miraflores",
+    "cuisineType": "Bar",
+    "ambiance": "Bar",
+    "googleMapsUrl": "https://maps.google.com/?q=Sastrer%C3%ADa%20Mart%C3%ADnez%20Lima"
+  },
+  {
+    "id": "kero",
+    "name": "Kero",
+    "category": "restaurant",
+    "description": "Bar dentro de Osaka; reservar.",
+    "address": "San Isidro, Lima",
+    "district": "San Isidro",
+    "cuisineType": "Bar",
+    "ambiance": "Bar",
+    "googleMapsUrl": "https://maps.google.com/?q=Kero%20Lima"
+  },
+  {
+    "id": "bottega-dasso",
+    "name": "Bottega Dasso",
+    "category": "restaurant",
+    "description": "Cena, cócteles y ambiente nocturno.",
+    "address": "San Isidro, Lima",
+    "district": "San Isidro",
+    "cuisineType": "Peruana",
+    "ambiance": "Bar",
+    "googleMapsUrl": "https://maps.google.com/?q=Bottega%20Dasso%20Lima"
+  }
+];
+
+export const restaurantDistricts = [
+  "Todos",
+  "Miraflores",
+  "Barranco",
+  "San Isidro",
+  "Surquillo",
+  "Pueblo Libre",
+  "La Molina",
+  "Otros"
+] as const;
+
+export const cuisineTypes = [
+  "Todos",
+  "Peruana",
+  "Mariscos",
+  "Nikkei",
+  "Japonesa",
+  "Italiana",
+  "Internacional",
+  "Parrilla",
+  "Cafetería",
+  "Heladería",
+  "Bar"
+] as const;
+
+export const ambianceTypes = [
+  "Todos",
+  "Casual",
+  "Romántico",
+  "Fine dining",
+  "Bar"
+] as const;

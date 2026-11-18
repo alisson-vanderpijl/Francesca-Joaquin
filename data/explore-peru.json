@@ -1,0 +1,46 @@
+[
+  {
+    "id": "peru-cusco",
+    "name": "Cusco & Machu Picchu",
+    "category": "explore-peru",
+    "minDurationDays": 5,
+    "imageLabel": "Cusco y Machu Picchu",
+    "imageUrl": "/Images/macchupicchu.jpg",
+    "description": "Historia inca, el Valle Sagrado y una de las Siete Maravillas del Mundo.",
+    "address": "Región Cusco, Perú",
+    "googleMapsUrl": "https://maps.google.com/?q=Machu+Picchu"
+  },
+  {
+    "id": "peru-arequipa",
+    "name": "Arequipa & Cañón del Colca",
+    "category": "explore-peru",
+    "minDurationDays": 3,
+    "imageLabel": "Arequipa",
+    "imageUrl": "/Images/explore-peru-arequipa.jpg",
+    "description": "Arquitectura colonial, volcanes y uno de los cañones más profundos del mundo.",
+    "address": "Arequipa, Perú",
+    "googleMapsUrl": "https://maps.google.com/?q=Arequipa+Peru"
+  },
+  {
+    "id": "peru-puno",
+    "name": "Puno & Lago Titicaca",
+    "category": "explore-peru",
+    "minDurationDays": 2,
+    "imageLabel": "Lago Titicaca",
+    "imageUrl": "/Images/explore-peru-puno-titicaca.jpg",
+    "description": "El lago navegable más alto del mundo y las islas de Uros y Taquile.",
+    "address": "Puno, Perú",
+    "googleMapsUrl": "https://maps.google.com/?q=Lago+Titicaca"
+  },
+  {
+    "id": "peru-tambopata",
+    "name": "Tambopata & Amazonía",
+    "category": "explore-peru",
+    "minDurationDays": 4,
+    "imageLabel": "Selva amazónica",
+    "imageUrl": "/Images/explore-peru-tambopata.jpg",
+    "description": "Vida silvestre, lodges en la selva y una de las regiones con mayor biodiversidad del Perú.",
+    "address": "Madre de Dios, Perú",
+    "googleMapsUrl": "https://maps.google.com/?q=Tambopata+Peru"
+  }
+]
