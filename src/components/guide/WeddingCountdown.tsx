@@ -27,7 +27,7 @@ export function WeddingCountdown() {
   const c = t.guide.landing.countdown;
 
   const countdownAt =
-    siteConfig.weddingCountdownAt ?? "2027-04-24T16:00:00-05:00";
+    siteConfig.weddingCountdownAt ?? "2027-04-03T15:30:00-05:00";
 
   const targetMs = useMemo(
     () => new Date(countdownAt).getTime(),

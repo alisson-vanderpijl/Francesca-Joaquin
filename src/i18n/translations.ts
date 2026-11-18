@@ -437,7 +437,7 @@ const es = {
       content:
         "Estamos muy felices de compartir este momento con ustedes. Aquí encontrarán la información práctica para disfrutar de la celebración con tranquilidad. [Placeholder — agregar detalles generales del evento, ubicación principal, contacto de coordinación, etc.]",
       dateLabel: "Fecha",
-      datePlaceholder: "[Placeholder — actualizar con fecha real]",
+      datePlaceholder: "Sábado 3 de abril de 2027",
     },
     howToGetThere: {
       title: "Cómo llegar",
@@ -1042,7 +1042,7 @@ const en = {
       content:
         "We are so happy to share this moment with you. Here you'll find practical information to enjoy the celebration with peace of mind. [Placeholder — add general event details, main venue, coordination contact, etc.]",
       dateLabel: "Date",
-      datePlaceholder: "[Placeholder — update with actual date]",
+      datePlaceholder: "Saturday, April 3, 2027",
     },
     howToGetThere: {
       title: "How to get there",

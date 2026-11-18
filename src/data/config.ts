@@ -3,8 +3,8 @@ import { WEDDING_VENUE_MAP_EMBED_URL } from "@/data/wedding-venue-map";
 
 export const SITE_CONFIG = {
   coupleNames: "Francesca & Joaquín",
-  weddingDate: "24 de Abril de 2027 - Lima, Perú",
-  weddingCountdownAt: "2027-04-24T16:00:00-05:00",
+  weddingDate: "3 de Abril de 2027 - Lima, Perú",
+  weddingCountdownAt: "2027-04-03T15:30:00-05:00",
   welcomeTitle: "Bienvenidos a Lima",
   welcomeMessage:
     "Estamos muy felices de compartir este momento con ustedes. Esta guía contiene toda la información que necesitan para disfrutar Lima, descubrir Perú y acompañarnos en nuestro matrimonio.",
