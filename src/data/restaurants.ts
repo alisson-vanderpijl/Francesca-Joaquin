@@ -424,7 +424,7 @@ export const restaurants: Restaurant[] = [
     "imageUrl": "/Images/restaurant-crem-clem.jpg",
     "imageLabel": "Crem dela Crem",
     "description": "Helado artesanal.",
-    "address": "C. Ignacio Merino 545, Miraflores · Parque Municipal 109, Barranco",
+    "address": "C. Ignacio Merino 545, Miraflores\nParque Municipal 109, Barranco",
     "district": "Barranco",
     "cuisineType": "Heladería",
     "ambiance": "Casual",
@@ -440,7 +440,7 @@ export const restaurants: Restaurant[] = [
     "address": "C. Coronel Inclán 300, Miraflores",
     "district": "Miraflores",
     "cuisineType": "Heladería",
-    "ambiance": "Casual",
+    "ambiance": "",
     "googleMapsUrl": "https://maps.google.com/?q=Anacapri%20Gelateria%20Artigianale%20Lima"
   },
   {
@@ -507,6 +507,58 @@ export const restaurants: Restaurant[] = [
     "cuisineType": "Peruana",
     "ambiance": "Bar",
     "googleMapsUrl": "https://maps.google.com/?q=Bottega%20Dasso%20Lima"
+  },
+  {
+    "id": "los-juarez",
+    "name": "Los Juárez",
+    "category": "restaurant",
+    "imageLabel": "Los Juárez",
+    "imageUrl": "/Images/restaurant-los-juarez.jpg",
+    "description": "Bar animado de inspiración mexicana con música, tragos y ambiente festivo, ideal para grupos que buscan una noche divertida. Les pedimos enviar a los novios los nombres de quienes asistirán para agregarlos a la lista de invitados.",
+    "address": "Av. Almte. Miguel Grau 308, Barranco",
+    "district": "Barranco",
+    "cuisineType": "Bar",
+    "ambiance": "Bar",
+    "googleMapsUrl": "https://maps.google.com/?q=Av+Almte+Miguel+Grau+308+Barranco+Lima"
+  },
+  {
+    "id": "open-bar",
+    "name": "Open Bar",
+    "category": "restaurant",
+    "imageLabel": "Open Bar",
+    "imageUrl": "/Images/restaurant-open-bar.jpg",
+    "description": "Opción divertida y con mucha energía para quienes disfrutan música de los 80 y 90, bailar y una salida más casual. Recomendamos reservar mesa con anticipación.",
+    "address": "Francisco de Paula Camino 280, Miraflores",
+    "district": "Miraflores",
+    "cuisineType": "Bar",
+    "ambiance": "Bar",
+    "googleMapsUrl": "https://maps.google.com/?q=Francisco+de+Paula+Camino+280+Miraflores+Lima"
+  },
+  {
+    "id": "satiro",
+    "name": "Sátiro",
+    "category": "restaurant",
+    "imageLabel": "Sátiro",
+    "imageUrl": "/Images/restaurant-satiro.png",
+    "description": "Restaurante y espacio nocturno llamativo que combina cocina nikkei, parrilla, arte, diseño y música en varios ambientes distintos. Excelente opción para cenar que puede convertirse fácilmente en una noche de fiesta. Les pedimos enviar a los novios los nombres de quienes asistirán para agregarlos a la lista de invitados.",
+    "address": "C. Sta. Luisa 295, San Isidro",
+    "district": "San Isidro",
+    "cuisineType": "Nikkei",
+    "ambiance": "Bar",
+    "googleMapsUrl": "https://maps.google.com/?q=Calle+Santa+Luisa+295+San+Isidro+Lima"
+  },
+  {
+    "id": "quipas",
+    "name": "Quipas",
+    "category": "restaurant",
+    "imageLabel": "Quipas",
+    "imageUrl": "/Images/restaurant-quipas.png",
+    "description": "Restaurante de cocina peruana contemporánea del chef Antoni Ramos, con una propuesta creativa sobre sabores tradicionales e ingredientes de la costa, los Andes y la Amazonía del Perú. Conocido por sus platos bellamente presentados, combinaciones innovadoras y un ambiente cálido e íntimo.",
+    "address": "Calle Alcanfores 174, Miraflores",
+    "district": "Miraflores",
+    "cuisineType": "Peruana",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Quipas+Miraflores+Lima"
   }
 ];
 

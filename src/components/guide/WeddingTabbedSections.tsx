@@ -128,7 +128,9 @@ export function WeddingTabbedSections({ weddingEvents }: WeddingTabbedSectionsPr
             <p className="mt-3 text-sm leading-relaxed text-charcoal/70">
               {buses.description}
             </p>
-            <p className="mt-4 text-xs text-charcoal/45">{buses.note}</p>
+            {buses.note?.trim() ? (
+              <p className="mt-4 text-xs text-charcoal/45">{buses.note}</p>
+            ) : null}
           </article>
           <article className="h-full border border-charcoal/10 p-6 md:p-8">
             <GuideIcon id="taxi" className={guideCardIconClass} />
@@ -138,7 +140,9 @@ export function WeddingTabbedSections({ weddingEvents }: WeddingTabbedSectionsPr
             <p className="mt-3 text-sm leading-relaxed text-charcoal/70">
               {taxi.description}
             </p>
-            <p className="mt-4 text-xs text-charcoal/45">{taxi.note}</p>
+            {taxi.note?.trim() ? (
+              <p className="mt-4 text-xs text-charcoal/45">{taxi.note}</p>
+            ) : null}
           </article>
         </div>
       </div>
@@ -158,7 +162,7 @@ export function WeddingTabbedSections({ weddingEvents }: WeddingTabbedSectionsPr
             {t.wedding.timeline.subtitle}
           </p>
         </header>
-        <Timeline events={weddingEvents} />
+        <Timeline events={weddingEvents} showDates />
       </div>
 
       <div

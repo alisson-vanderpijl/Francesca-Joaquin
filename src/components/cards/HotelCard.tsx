@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { PriceLevelTag } from "@/components/ui/PriceLevelTag";
 import { useLanguage } from "@/i18n/LanguageProvider";
+import { renderInlineBold } from "@/lib/render-inline-bold";
 import { withLocaleOverride } from "@/lib/localize-item";
 import type { Hotel } from "@/types";
 
@@ -60,7 +61,7 @@ export function HotelCard({ hotel }: HotelCardProps) {
         </div>
 
         <p className="mt-4 text-sm leading-relaxed text-charcoal/70">
-          {item.description}
+          {renderInlineBold(item.description)}
         </p>
 
         <dl className="mt-6 space-y-3 text-sm">

@@ -118,4 +118,20 @@ export const enRestaurantOverrides: Record<string, { description: string }> = {
   "bottega-dasso": {
     description: "Dinner, cocktails, and nightlife.",
   },
+  "los-juarez": {
+    description:
+      "A lively Mexican-inspired bar with music, drinks and a festive atmosphere, ideal for groups looking for a fun night out. Please send the bride and groom the names of those attending so they can be added to the guest list.",
+  },
+  "open-bar": {
+    description:
+      "A fun, energetic option for guests who enjoy 80s and 90s music, dancing and a more casual night out. We recommend booking a table in advance.",
+  },
+  satiro: {
+    description:
+      "A visually striking restaurant and nightlife venue combining Nikkei cuisine, grilled dishes, art, design and music across several distinctive spaces. A great option for dinner that can easily turn into a night out. Please send the bride and groom the names of those attending so they can be added to the guest list.",
+  },
+  quipas: {
+    description:
+      "Chef Antoni Ramos’ contemporary Peruvian restaurant, offering a creative take on traditional flavors with ingredients from Peru’s coast, Andes and Amazon. Known for its beautifully presented dishes, innovative combinations and warm, intimate atmosphere.",
+  },
 };

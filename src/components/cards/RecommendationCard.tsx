@@ -34,6 +34,11 @@ export function RecommendationCard({
               alt={item.name}
               fill
               className="object-cover"
+              style={
+                item.imageObjectPosition
+                  ? { objectPosition: item.imageObjectPosition }
+                  : undefined
+              }
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </div>
@@ -51,7 +56,15 @@ export function RecommendationCard({
           {renderInlineBold(item.description)}
         </p>
 
-        <dl className="mt-6 space-y-3 text-sm">
+        {item.tip?.trim() ? (
+          <p className="mt-auto pt-6 text-sm leading-relaxed text-charcoal/70">
+            {item.tip}
+          </p>
+        ) : null}
+
+        <dl
+          className={`space-y-3 text-sm ${item.tip?.trim() ? "mt-4" : "mt-6"}`}
+        >
           <div>
             <dt className="text-xs uppercase tracking-widest text-charcoal/40">
               {addressLabel}

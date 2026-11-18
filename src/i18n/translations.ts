@@ -42,7 +42,7 @@ const es = {
     stay: {
       title: "Hospedaje",
       subtitle:
-        "Para facilitar su estancia, hemos reservado bloques de habitaciones con tarifas especiales en 2 hoteles y les sugerimos un tercer hotel también recomendado pero con tarifas un poco más económicas. A continuación, encontrará los detalles de cada opción disponible. Para confirmar su reserva, le rogamos que se ponga en contacto directamente con el hotel de su elección. Una vez completado el proceso, le agradeceríamos que nos enviara un correo electrónico con las fechas de su estancia y el nombre del hotel donde se aloja. Quedamos a su disposición para cualquier consulta adicional.",
+        "Para facilitar su estadía, hemos reservado bloques de habitaciones con tarifas especiales en dos hoteles. Además, les recomendamos una tercera opción que también nos parece una excelente alternativa y que cuenta con tarifas un poco más económicas.\n\nA continuación, encontrarán los detalles de cada una de las opciones disponibles.\n\nPara realizar su reserva, les pedimos que se pongan en contacto directamente con el encargado de reservas de cada hotel.\n\nUna vez confirmada su reserva, les agradeceríamos que nos enviaran un correo electrónico a **francescayjoaquin27@gmail.com**, indicando las fechas de su estadía y el nombre del hotel elegido.",
     },
     eatDrink: {
       title: "Gastronomía",
@@ -86,7 +86,7 @@ const es = {
     roomRate: "Tarifas",
     visitWebsite: "Visitar sitio web",
     viewAirbnb: "Ver en Airbnb",
-    googleMaps: "Google Maps →",
+    googleMaps: "Ver en Google Maps →",
     location: "Ubicación",
     minDurationPrefix: "Mín.",
     day: "día",
@@ -295,6 +295,8 @@ const es = {
         id: "food",
         title: "Comida",
         body: "Lima tiene una escena gastronómica excepcional. En los restaurantes más populares conviene reservar con anticipación, especialmente para cena y fines de semana.",
+        linkHref: "/guide/eat-drink",
+        linkLabel: "Explorar restaurantes",
       },
       {
         id: "electricity",
@@ -302,14 +304,19 @@ const es = {
         body: "En Perú la electricidad es de 220 V. Los enchufes tipo A y C son los más comunes.",
       },
       {
-        id: "getting-around",
-        title: "Desplazarse",
-        body: "El tráfico en Lima puede ser intenso, sobre todo en hora punta entre semana. Calcule tiempo extra al moverse entre distritos.",
-      },
-      {
         id: "weather",
         title: "Clima — principios de abril",
         body: "A principios de abril Lima suele ser templada y agradable, con temperaturas diurnas de unos 23–25 °C (73–77 °F) y noches más frescas de 18–20 °C (64–68 °F). La lluvia es poco frecuente, aunque puede haber humedad y las noches junto al costa resultan más frescas.\n\nRecomendamos ropa ligera durante el día y llevar una chaqueta ligera, chal o pareo para la noche, sobre todo en eventos al aire libre.",
+      },
+      {
+        id: "transport-city",
+        title: "Transporte en la ciudad",
+        body: "El tráfico en Lima puede ser intenso, sobre todo en hora punta entre semana. Calcule tiempo extra al moverse entre distritos.\n\nUber y Cabify (app) son opciones habituales para moverse entre distritos.\n\nConsejo: Como en cualquier gran ciudad, mantenga sus pertenencias consigo y evite mostrar objetos de valor innecesariamente.",
+      },
+      {
+        id: "transport-airport",
+        title: "Transporte aeropuerto",
+        body: "Para llegadas y salidas, recomendamos traslados del hotel o servicios de taxi oficiales dentro de la terminal del aeropuerto.\n\n**Taxi Lima Airport**\n**+51 993 665 563**",
       },
     ],
   },
@@ -376,7 +383,7 @@ const es = {
           description:
             "Selección curada de moda, accesorios y lifestyle de marcas locales e internacionales.",
           address: "Calle Miguel Dasso 198, San Isidro",
-          websiteUrl: "https://www.instagram.com/thehangerlima/",
+          websiteUrl: "https://thehanger.com.pe/",
         },
         {
           id: "roxana-pardo",
@@ -386,7 +393,7 @@ const es = {
           description:
             "Aretes, pulseras, collares y piezas de autoría de una diseñadora peruana.",
           address: "Calle Miguel Dasso 140, San Isidro",
-          websiteUrl: "https://roxanapardo.com",
+          websiteUrl: "https://roxanapardo.com/",
         },
         {
           id: "isidra",
@@ -396,6 +403,7 @@ const es = {
           description:
             "Ropa y accesorios para mujer con un estilo femenino y contemporáneo.",
           address: "Calle Miguel Dasso 182, San Isidro",
+          websiteUrl: "https://shopisidra.com/",
         },
         {
           id: "ecru",
@@ -405,7 +413,7 @@ const es = {
           description:
             "Selección cuidada de ropa, accesorios y piezas de lifestyle con estética limpia y actual.",
           address: "Calle Miguel Dasso 160, of. 302, San Isidro",
-          websiteUrl: "https://ecru.pe",
+          websiteUrl: "https://www.ecru.pe/",
         },
       ],
     },
@@ -468,13 +476,13 @@ const es = {
         title: "Taxis",
         description:
           "Tendremos servicio de taxi disponible para facilitar el regreso de los invitados al finalizar la celebración.",
-        note: "[Placeholder — proveedor, teléfono y horarios]",
+        note: "",
       },
       buses: {
         title: "Buses",
         description:
           "Tendremos diferentes buses que saldrán desde distintos puntos de Lima para llevar a los invitados al evento.",
-        note: "[Placeholder — puntos de salida, horarios y rutas]",
+        note: "Horarios y ubicación por confirmar",
       },
     },
   },
@@ -527,7 +535,7 @@ const en = {
     stay: {
       title: "Accommodation",
       subtitle:
-        "To make your stay easier, we have reserved room blocks at special rates at two hotels and suggest a third recommended option at a more economical price point. Below you will find details for each available option. To confirm your reservation, please contact your chosen hotel directly. Once you have completed the process, we would appreciate an email with your stay dates and the name of the hotel where you are staying. We are happy to help with any questions.",
+        "To make your stay easier, we have reserved room blocks at special rates at two hotels. We also recommend a third option that we think is an excellent alternative with somewhat more economical rates.\n\nBelow you will find details for each available option.\n\nTo book, please contact each hotel's reservations team directly.\n\nOnce your reservation is confirmed, we would appreciate an email to **francescayjoaquin27@gmail.com** with your stay dates and chosen hotel.",
     },
     eatDrink: {
       title: "Gastronomy",
@@ -571,7 +579,7 @@ const en = {
     roomRate: "Rates",
     visitWebsite: "Visit website",
     viewAirbnb: "View on Airbnb",
-    googleMaps: "Google Maps →",
+    googleMaps: "View on Google Maps →",
     location: "Location",
     minDurationPrefix: "Min.",
     day: "day",
@@ -730,12 +738,12 @@ const en = {
     hotelOverrides: {
       "hotel-intercontinental": {
         description:
-          "Several ocean-view rooms, close to restaurants and nightlife. When booking, contact Mijail Meza Arenas (WhatsApp +51 986 662 859, reservas.limha@r-hr.com) and mention the SOUZA-VILLANUEVA Wedding.",
+          "Several ocean-view rooms, close to restaurants and nightlife. When booking, contact **Mijail Meza Arenas (WhatsApp +51 986 662 859, reservas.limha@r-hr.com) and mention the SOUZA-VILLANUEVA Wedding.**",
         roomRate: "From USD 260 to USD 565",
       },
       "hotel-indigo": {
         description:
-          "An excellent Miraflores option close to everything; internally connected to Hotel InterContinental. When booking, contact Mijail Meza Arenas (WhatsApp +51 986 662 859, reservas.limha@r-hr.com) and mention the SOUZA-VILLANUEVA Wedding.",
+          "An excellent Miraflores option close to everything; internally connected to Hotel InterContinental. When booking, contact **Mijail Meza Arenas (WhatsApp +51 986 662 859, reservas.limha@r-hr.com) and mention the SOUZA-VILLANUEVA Wedding.**",
         roomRate: "From USD 140 to USD 265",
       },
       "hotel-ibis-larco": {
@@ -857,6 +865,8 @@ const en = {
         id: "food",
         title: "Food",
         body: "Lima has an exceptional culinary scene. For popular restaurants, reservations are highly recommended, especially for dinner and on weekends.",
+        linkHref: "/guide/eat-drink",
+        linkLabel: "Explore restaurants",
       },
       {
         id: "electricity",
@@ -864,14 +874,19 @@ const en = {
         body: "Peru uses 220V electricity. Plug types A and C are commonly used.",
       },
       {
-        id: "getting-around",
-        title: "Getting Around",
-        body: "Lima traffic can be heavy, especially during weekday rush hours. Allow extra travel time when moving between districts.",
-      },
-      {
         id: "weather",
         title: "Weather — Early April",
         body: "Early April in Lima is usually mild and pleasant, with daytime temperatures around 23–25°C (73–77°F) and cooler evenings around 18–20°C (64–68°F). Rain is uncommon, although Lima can be humid and evenings near the coast may feel cooler.\n\nWe recommend light clothing during the day and bringing a light jacket, shawl or wrap for the evening, especially for outdoor events.",
+      },
+      {
+        id: "transport-city",
+        title: "Getting around the city",
+        body: "Lima traffic can be heavy, especially during weekday rush hours. Allow extra travel time when moving between districts.\n\nUber and Cabify (apps) are common ways to move between districts.\n\nTip: As in any large city, keep personal belongings with you and avoid displaying valuables unnecessarily.",
+      },
+      {
+        id: "transport-airport",
+        title: "Airport transport",
+        body: "For arrivals and departures, hotel transfers or official taxi services inside the airport terminal are recommended.\n\n**Taxi Lima Airport**\n**+51 993 665 563**",
       },
     ],
   },
@@ -911,12 +926,17 @@ const en = {
       "lima-pisco-route": {
         name: "Pisco Sour Route — Historic Lima",
         description:
-          "A classic route through Lima’s Historic Centre to try Peru’s iconic Pisco Sour in some of the city’s most traditional and historic venues. Tip: Pisco Sours are stronger than they taste. **Venues: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Suggested walking route: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar.**",
+          "A classic route through Lima’s Historic Centre to try Peru’s iconic Pisco Sour in some of the city’s most traditional and historic venues. **Venues: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Suggested walking route: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar.**",
+        tip: "Tip: Pisco Sours are stronger than they taste.",
       },
       "lima-centro": {
         name: "Historic Centre of Lima",
         description:
           "Half-day visit (guide recommended): Plaza Mayor → Cathedral → Government Palace area → San Francisco Monastery and catacombs → colonial balconies.",
+      },
+      "lima-pedro-de-osma": {
+        name: "Pedro de Osma Museum — Barranco",
+        description: "Beautiful mansion and Peruvian art collection.",
       },
     },
     shoppingSection: {
@@ -968,7 +988,7 @@ const en = {
           description:
             "A curated selection of fashion, accessories and lifestyle pieces from local and international brands.",
           address: "Calle Miguel Dasso 198, San Isidro",
-          websiteUrl: "https://www.instagram.com/thehangerlima/",
+          websiteUrl: "https://thehanger.com.pe/",
         },
         {
           id: "roxana-pardo",
@@ -978,7 +998,7 @@ const en = {
           description:
             "Handcrafted earrings, bracelets, necklaces and statement accessories by a Peruvian designer.",
           address: "Calle Miguel Dasso 140, San Isidro",
-          websiteUrl: "https://roxanapardo.com",
+          websiteUrl: "https://roxanapardo.com/",
         },
         {
           id: "isidra",
@@ -988,6 +1008,7 @@ const en = {
           description:
             "Contemporary women’s clothing and accessories with a feminine, modern style.",
           address: "Calle Miguel Dasso 182, San Isidro",
+          websiteUrl: "https://shopisidra.com/",
         },
         {
           id: "ecru",
@@ -997,7 +1018,7 @@ const en = {
           description:
             "A refined selection of clothing, accessories and lifestyle pieces with a clean, contemporary aesthetic.",
           address: "Calle Miguel Dasso 160, of. 302, San Isidro",
-          websiteUrl: "https://ecru.pe",
+          websiteUrl: "https://www.ecru.pe/",
         },
       ],
     },
@@ -1060,13 +1081,13 @@ const en = {
         title: "Taxis",
         description:
           "We'll have taxi service available to help guests get home at the end of the celebration.",
-        note: "[Placeholder — provider, phone, and schedule]",
+        note: "",
       },
       buses: {
         title: "Shuttle buses",
         description:
           "We'll have shuttle buses departing from different points in Lima to take guests to the event.",
-        note: "[Placeholder — departure points, times, and routes]",
+        note: "Schedule and location to be confirmed",
       },
     },
   },

@@ -72,20 +72,15 @@ export type ContentSection =
   | "translations"
   | "nav-groups";
 
-export const CONTENT_SECTIONS: { id: ContentSection; label: string }[] = [
-  { id: "site-config", label: "General" },
-  { id: "page-headers", label: "Encabezados de páginas" },
+/** Sections editable from /admin (itineraries only). */
+export type AdminEditableSection = "itinerary-events" | "wedding-events";
+
+export const ADMIN_CONTENT_SECTIONS: {
+  id: AdminEditableSection;
+  label: string;
+}[] = [
   { id: "itinerary-events", label: "El Itinerario" },
   { id: "wedding-events", label: "La Boda — Itinerario del día" },
-  { id: "hotels", label: "Hospedaje" },
-  { id: "restaurants", label: "Comer y beber" },
-  { id: "explore-lima", label: "Explorar Lima" },
-  { id: "explore-peru", label: "Explorar Perú" },
-  { id: "travel-agencies", label: "Agencias de viajes" },
-  { id: "get-ready", label: "Arreglarse" },
-  { id: "at-home-beauty", label: "Servicios a domicilio" },
-  { id: "translations", label: "Textos (ES / EN)" },
-  { id: "nav-groups", label: "Navegación" },
 ];
 
 export type {

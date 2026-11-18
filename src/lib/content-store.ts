@@ -54,7 +54,7 @@ const DEFAULT_PAGE_HEADERS: PageHeaders = {
   stay: {
     title: "Hospedaje",
     subtitle:
-      "Para facilitar su estancia, hemos reservado bloques de habitaciones con tarifas especiales en 2 hoteles y les sugerimos un tercer hotel también recomendado pero con tarifas un poco más económicas. A continuación, encontrará los detalles de cada opción disponible. Para confirmar su reserva, le rogamos que se ponga en contacto directamente con el hotel de su elección. Una vez completado el proceso, le agradeceríamos que nos enviara un correo electrónico con las fechas de su estancia y el nombre del hotel donde se aloja. Quedamos a su disposición para cualquier consulta adicional.",
+      "Para facilitar su estadía, hemos reservado bloques de habitaciones con tarifas especiales en dos hoteles. Además, les recomendamos una tercera opción que también nos parece una excelente alternativa y que cuenta con tarifas un poco más económicas.\n\nA continuación, encontrarán los detalles de cada una de las opciones disponibles.\n\nPara realizar su reserva, les pedimos que se pongan en contacto directamente con el encargado de reservas de cada hotel.\n\nUna vez confirmada su reserva, les agradeceríamos que nos enviaran un correo electrónico a **francescayjoaquin27@gmail.com**, indicando las fechas de su estadía y el nombre del hotel elegido.",
   },
   eatDrink: {
     title: "Gastronomía",

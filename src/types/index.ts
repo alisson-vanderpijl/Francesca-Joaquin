@@ -3,10 +3,14 @@ export type Recommendation = {
   name: string;
   category: string;
   description: string;
+  /** Optional tip / note shown above the address block */
+  tip?: string;
   address: string;
   phone?: string;
   imageLabel?: string;
   imageUrl?: string;
+  /** CSS object-position for card images (e.g. "center 35%") */
+  imageObjectPosition?: string;
   websiteUrl?: string;
   googleMapsUrl?: string;
 };
@@ -72,6 +76,7 @@ export type WeddingEvent = {
   address: string;
   description: string;
   additionalInfo?: string;
+  googleMapsUrl?: string;
 };
 
 export type GuideCategory = {

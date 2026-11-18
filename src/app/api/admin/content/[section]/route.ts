@@ -7,19 +7,8 @@ import {
 } from "@/lib/content-store";
 
 const VALID_SECTIONS = new Set<ContentSection>([
-  "site-config",
-  "page-headers",
   "itinerary-events",
   "wedding-events",
-  "hotels",
-  "restaurants",
-  "explore-lima",
-  "explore-peru",
-  "travel-agencies",
-  "get-ready",
-  "at-home-beauty",
-  "translations",
-  "nav-groups",
 ]);
 
 type RouteContext = {

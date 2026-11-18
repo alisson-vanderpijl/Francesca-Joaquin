@@ -1,3 +1,6 @@
+"use client";
+
+import { useLanguage } from "@/i18n/LanguageProvider";
 import type { WeddingEvent } from "@/types";
 
 type TimelineProps = {
@@ -6,6 +9,8 @@ type TimelineProps = {
 };
 
 export function Timeline({ events, showDates = false }: TimelineProps) {
+  const { t } = useLanguage();
+  const mapsLabel = t.cardLabels.googleMaps;
   return (
     <div className="relative">
       <div className="absolute left-4 top-0 hidden h-full w-px bg-charcoal/15 md:left-1/2 md:block" />
@@ -47,9 +52,21 @@ export function Timeline({ events, showDates = false }: TimelineProps) {
               >
                 <p className="text-sm font-medium text-charcoal">{event.location}</p>
                 <p className="mt-2 text-sm text-charcoal/60">{event.address}</p>
-                <p className="mt-4 text-sm leading-relaxed text-charcoal/70">
-                  {event.description}
-                </p>
+                {event.googleMapsUrl ? (
+                  <a
+                    href={event.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-block text-xs uppercase tracking-widest text-charcoal/60 transition-colors hover:text-charcoal"
+                  >
+                    {mapsLabel}
+                  </a>
+                ) : null}
+                {event.description?.trim() ? (
+                  <p className="mt-4 text-sm leading-relaxed text-charcoal/70">
+                    {event.description}
+                  </p>
+                ) : null}
               </div>
 
               <div className="absolute left-4 top-6 hidden h-2 w-2 -translate-x-1/2 rounded-full bg-earth md:left-1/2 md:block" />

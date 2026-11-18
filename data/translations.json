@@ -193,7 +193,9 @@
         {
           "id": "food",
           "title": "Comida",
-          "body": "Lima tiene una escena gastronómica excepcional. En los restaurantes más populares conviene reservar con anticipación, especialmente para cena y fines de semana."
+          "body": "Lima tiene una escena gastronómica excepcional. En los restaurantes más populares conviene reservar con anticipación, especialmente para cena y fines de semana.",
+          "linkHref": "/guide/eat-drink",
+          "linkLabel": "Explorar restaurantes"
         },
         {
           "id": "electricity",
@@ -201,14 +203,19 @@
           "body": "En Perú la electricidad es de 220 V. Los enchufes tipo A y C son los más comunes."
         },
         {
-          "id": "getting-around",
-          "title": "Desplazarse",
-          "body": "El tráfico en Lima puede ser intenso, sobre todo en hora punta entre semana. Calcule tiempo extra al moverse entre distritos."
-        },
-        {
           "id": "weather",
           "title": "Clima — principios de abril",
           "body": "A principios de abril Lima suele ser templada y agradable, con temperaturas diurnas de unos 23–25 °C (73–77 °F) y noches más frescas de 18–20 °C (64–68 °F). La lluvia es poco frecuente, aunque puede haber humedad y las noches junto al costa resultan más frescas.\n\nRecomendamos ropa ligera durante el día y llevar una chaqueta ligera, chal o pareo para la noche, sobre todo en eventos al aire libre."
+        },
+        {
+          "id": "transport-city",
+          "title": "Transporte en la ciudad",
+          "body": "El tráfico en Lima puede ser intenso, sobre todo en hora punta entre semana. Calcule tiempo extra al moverse entre distritos.\n\nUber y Cabify (app) son opciones habituales para moverse entre distritos.\n\nConsejo: Como en cualquier gran ciudad, mantenga sus pertenencias consigo y evite mostrar objetos de valor innecesariamente."
+        },
+        {
+          "id": "transport-airport",
+          "title": "Transporte aeropuerto",
+          "body": "Para llegadas y salidas, recomendamos traslados del hotel o servicios de taxi oficiales dentro de la terminal del aeropuerto.\n\n**Taxi Lima Airport**\n**+51 993 665 563**"
         }
       ]
     },
@@ -266,7 +273,7 @@
             "imageLabel": "The Hanger",
             "description": "Selección curada de moda, accesorios y lifestyle de marcas locales e internacionales.",
             "address": "Calle Miguel Dasso 198, San Isidro",
-            "websiteUrl": "https://www.instagram.com/thehangerlima/"
+            "websiteUrl": "https://thehanger.com.pe/"
           },
           {
             "id": "roxana-pardo",
@@ -275,7 +282,7 @@
             "imageLabel": "Roxana Pardo",
             "description": "Aretes, pulseras, collares y piezas de autoría de una diseñadora peruana.",
             "address": "Calle Miguel Dasso 140, San Isidro",
-            "websiteUrl": "https://roxanapardo.com"
+            "websiteUrl": "https://roxanapardo.com/"
           },
           {
             "id": "isidra",
@@ -283,7 +290,8 @@
             "tagline": "Boutique de moda femenina",
             "imageLabel": "Isidra",
             "description": "Ropa y accesorios para mujer con un estilo femenino y contemporáneo.",
-            "address": "Calle Miguel Dasso 182, San Isidro"
+            "address": "Calle Miguel Dasso 182, San Isidro",
+            "websiteUrl": "https://shopisidra.com/"
           },
           {
             "id": "ecru",
@@ -292,7 +300,7 @@
             "imageLabel": "Ecru",
             "description": "Selección cuidada de ropa, accesorios y piezas de lifestyle con estética limpia y actual.",
             "address": "Calle Miguel Dasso 160, of. 302, San Isidro",
-            "websiteUrl": "https://ecru.pe"
+            "websiteUrl": "https://www.ecru.pe/"
           }
         ]
       }
@@ -345,12 +353,12 @@
         "taxi": {
           "title": "Taxis",
           "description": "Tendremos servicio de taxi disponible para facilitar el regreso de los invitados al finalizar la celebración.",
-          "note": "[Placeholder — proveedor, teléfono y horarios]"
+          "note": ""
         },
         "buses": {
           "title": "Buses",
           "description": "Tendremos diferentes buses que saldrán desde distintos puntos de Lima para llevar a los invitados al evento.",
-          "note": "[Placeholder — puntos de salida, horarios y rutas]"
+          "note": "Horarios y ubicación por confirmar"
         }
       }
     },
@@ -555,7 +563,9 @@
         {
           "id": "food",
           "title": "Food",
-          "body": "Lima has an exceptional culinary scene. For popular restaurants, reservations are highly recommended, especially for dinner and on weekends."
+          "body": "Lima has an exceptional culinary scene. For popular restaurants, reservations are highly recommended, especially for dinner and on weekends.",
+          "linkHref": "/guide/eat-drink",
+          "linkLabel": "Explore restaurants"
         },
         {
           "id": "electricity",
@@ -563,14 +573,19 @@
           "body": "Peru uses 220V electricity. Plug types A and C are commonly used."
         },
         {
-          "id": "getting-around",
-          "title": "Getting Around",
-          "body": "Lima traffic can be heavy, especially during weekday rush hours. Allow extra travel time when moving between districts."
-        },
-        {
           "id": "weather",
           "title": "Weather — Early April",
           "body": "Early April in Lima is usually mild and pleasant, with daytime temperatures around 23–25°C (73–77°F) and cooler evenings around 18–20°C (64–68°F). Rain is uncommon, although Lima can be humid and evenings near the coast may feel cooler.\n\nWe recommend light clothing during the day and bringing a light jacket, shawl or wrap for the evening, especially for outdoor events."
+        },
+        {
+          "id": "transport-city",
+          "title": "Getting around the city",
+          "body": "Lima traffic can be heavy, especially during weekday rush hours. Allow extra travel time when moving between districts.\n\nUber and Cabify (apps) are common ways to move between districts.\n\nTip: As in any large city, keep personal belongings with you and avoid displaying valuables unnecessarily."
+        },
+        {
+          "id": "transport-airport",
+          "title": "Airport transport",
+          "body": "For arrivals and departures, hotel transfers or official taxi services inside the airport terminal are recommended.\n\n**Taxi Lima Airport**\n**+51 993 665 563**"
         }
       ]
     },
@@ -586,7 +601,12 @@
       "placeOverrides": {
         "lima-pisco-route": {
           "name": "Pisco Sour Route — Historic Lima",
-          "description": "A classic route through Lima's Historic Centre to try Peru's iconic Pisco Sour in some of the city's most traditional and historic venues. Tip: Pisco Sours are stronger than they taste. **Venues: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Suggested walking route: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar.**"
+          "description": "A classic route through Lima's Historic Centre to try Peru's iconic Pisco Sour in some of the city's most traditional and historic venues. **Venues: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Suggested walking route: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar.**",
+          "tip": "Tip: Pisco Sours are stronger than they taste."
+        },
+        "lima-pedro-de-osma": {
+          "name": "Pedro de Osma Museum — Barranco",
+          "description": "Beautiful mansion and Peruvian art collection."
         }
       },
       "shoppingSection": {
@@ -633,7 +653,7 @@
             "imageLabel": "The Hanger",
             "description": "A curated selection of fashion, accessories and lifestyle pieces from local and international brands.",
             "address": "Calle Miguel Dasso 198, San Isidro",
-            "websiteUrl": "https://www.instagram.com/thehangerlima/"
+            "websiteUrl": "https://thehanger.com.pe/"
           },
           {
             "id": "roxana-pardo",
@@ -642,7 +662,7 @@
             "imageLabel": "Roxana Pardo",
             "description": "Handcrafted earrings, bracelets, necklaces and statement accessories by a Peruvian designer.",
             "address": "Calle Miguel Dasso 140, San Isidro",
-            "websiteUrl": "https://roxanapardo.com"
+            "websiteUrl": "https://roxanapardo.com/"
           },
           {
             "id": "isidra",
@@ -650,7 +670,8 @@
             "tagline": "Women's Fashion Boutique",
             "imageLabel": "Isidra",
             "description": "Contemporary women's clothing and accessories with a feminine, modern style.",
-            "address": "Calle Miguel Dasso 182, San Isidro"
+            "address": "Calle Miguel Dasso 182, San Isidro",
+            "websiteUrl": "https://shopisidra.com/"
           },
           {
             "id": "ecru",
@@ -659,7 +680,7 @@
             "imageLabel": "Ecru",
             "description": "A refined selection of clothing, accessories and lifestyle pieces with a clean, contemporary aesthetic.",
             "address": "Calle Miguel Dasso 160, of. 302, San Isidro",
-            "websiteUrl": "https://ecru.pe"
+            "websiteUrl": "https://www.ecru.pe/"
           }
         ]
       }
@@ -712,12 +733,12 @@
         "taxi": {
           "title": "Taxis",
           "description": "We'll have taxi service available to help guests get home at the end of the celebration.",
-          "note": "[Placeholder — provider, phone, and schedule]"
+          "note": ""
         },
         "buses": {
           "title": "Shuttle buses",
           "description": "We'll have shuttle buses departing from different points in Lima to take guests to the event.",
-          "note": "[Placeholder — departure points, times, and routes]"
+          "note": "Schedule and location to be confirmed"
         }
       }
     },

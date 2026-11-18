@@ -45,8 +45,9 @@
     "name": "Ruta Pisco Sour — Lima histórica",
     "category": "explore-lima",
     "imageLabel": "Ruta Pisco Sour",
-    "imageUrl": "/Images/explore-lima-ruta-pisco-sour.jpg",
-    "description": "Un recorrido clásico por el Centro Histórico para probar el icónico Pisco Sour en algunos de los bares más tradicionales y con historia de la ciudad. Consejo: los Pisco Sour son más fuertes de lo que saben. **Lugares: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Ruta sugerida a pie: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar.**",
+    "imageUrl": "/Images/explore-lima-ruta-pisco-sour-v4.jpg",
+    "description": "Un recorrido clásico por el Centro Histórico para probar el icónico Pisco Sour en algunos de los bares más tradicionales y con historia de la ciudad. **Lugares: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Ruta sugerida a pie: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar.**",
+    "tip": "Consejo: los Pisco Sour son más fuertes de lo que saben.",
     "address": "Centro Histórico de Lima",
     "googleMapsUrl": "https://maps.google.com/?q=Hotel+Maury+Lima"
   },
@@ -59,5 +60,16 @@
     "description": "Visita de medio día (preferible con guía): Plaza Mayor → Catedral → entorno del Palacio de Gobierno → Monasterio de San Francisco y catacumbas → balcones coloniales.",
     "address": "Centro de Lima",
     "googleMapsUrl": "https://maps.google.com/?q=Plaza+Mayor+Lima"
+  },
+  {
+    "id": "lima-pedro-de-osma",
+    "name": "Museo Pedro de Osma — Barranco",
+    "category": "explore-lima",
+    "imageLabel": "Museo Pedro de Osma",
+    "imageUrl": "/Images/explore-lima-museo-pedro-de-osma.jpg",
+    "description": "Hermosa mansión y colección de arte peruano.",
+    "address": "Av. Pedro de Osma 421, Barranco",
+    "websiteUrl": "https://www.museopedrodeosma.org/",
+    "googleMapsUrl": "https://maps.google.com/?q=Museo+Pedro+de+Osma+Barranco"
   }
 ]

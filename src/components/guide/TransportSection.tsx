@@ -48,7 +48,9 @@ export function TransportSection({ variant = "page" }: TransportSectionProps) {
               <p className="mt-3 text-sm leading-relaxed text-charcoal/70">
                 {option.description}
               </p>
-              <p className="mt-4 text-xs text-charcoal/45">{option.note}</p>
+              {option.note?.trim() ? (
+                <p className="mt-4 text-xs text-charcoal/45">{option.note}</p>
+              ) : null}
             </article>
           </FadeIn>
         ))}

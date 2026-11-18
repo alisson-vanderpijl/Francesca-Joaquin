@@ -72,7 +72,9 @@ export function RestaurantCard({ restaurant }: RestaurantCardProps) {
             <dt className="text-xs uppercase tracking-widest text-charcoal/40">
               {labels.address}
             </dt>
-            <dd className="mt-1 text-charcoal/80">{restaurant.address}</dd>
+            <dd className="mt-1 whitespace-pre-line text-charcoal/80">
+              {restaurant.address}
+            </dd>
           </div>
           {restaurant.phone && (
             <div>
