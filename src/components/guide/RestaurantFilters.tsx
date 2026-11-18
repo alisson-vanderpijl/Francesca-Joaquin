@@ -34,7 +34,9 @@ export function RestaurantFilters({
   const quickTags = useMemo(() => {
     const options = [
       ...cuisineTypes.filter((o) => o !== "Todos"),
-      ...ambianceTypes.filter((o) => o !== "Todos"),
+      ...ambianceTypes.filter(
+        (o) => o !== "Todos" && o !== "Casual" && o !== "Romántico"
+      ),
     ];
     return [...new Set(options)];
   }, [cuisineTypes, ambianceTypes]);
@@ -85,7 +87,7 @@ export function RestaurantFilters({
   return (
     <>
       <FadeIn>
-        <div className="mb-10 grid grid-cols-1 gap-6 border border-charcoal/10 bg-sand/20 p-6 md:grid-cols-3 md:p-8">
+        <div className="mb-8 grid grid-cols-1 gap-6 border border-charcoal/10 bg-sand/20 p-6 md:grid-cols-3 md:p-8">
           <Filter
             label={filters.district}
             options={restaurantDistricts}
@@ -107,35 +109,37 @@ export function RestaurantFilters({
             onChange={handleAmbianceChange}
             formatOption={formatOption}
           />
-
-          {quickTags.length > 0 && (
-            <div className="border-t border-charcoal/10 pt-6 md:col-span-3">
-              <p className="text-xs uppercase tracking-widest text-charcoal/45">
-                {filters.quickFilters}
-              </p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {quickTags.map((tag) => {
-                  const selected = quickTag === tag;
-                  return (
-                    <button
-                      key={tag}
-                      type="button"
-                      onClick={() => toggleQuickTag(tag)}
-                      className={`border px-3 py-1.5 text-xs transition-colors ${
-                        selected
-                          ? "border-charcoal bg-charcoal text-ivory"
-                          : "border-charcoal/15 bg-ivory text-charcoal/70 hover:border-charcoal/40"
-                      }`}
-                    >
-                      {formatOption(tag)}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
         </div>
       </FadeIn>
+
+      {quickTags.length > 0 && (
+        <FadeIn delay={40}>
+          <div className="mb-10">
+            <p className="text-xs uppercase tracking-widest text-charcoal/45">
+              {filters.quickFilters}
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2.5 sm:gap-3">
+              {quickTags.map((tag) => {
+                const selected = quickTag === tag;
+                return (
+                  <button
+                    key={tag}
+                    type="button"
+                    onClick={() => toggleQuickTag(tag)}
+                    className={`border px-4 py-2 text-sm transition-colors ${
+                      selected
+                        ? "border-charcoal bg-charcoal text-ivory"
+                        : "border-charcoal/15 bg-ivory text-charcoal/70 hover:border-charcoal/40"
+                    }`}
+                  >
+                    {formatOption(tag)}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </FadeIn>
+      )}
 
       <p className="mb-8 text-sm text-charcoal/50">
         {filtered.length}{" "}

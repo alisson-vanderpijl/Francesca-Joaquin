@@ -8,7 +8,6 @@ type TimeLeft = {
   days: number;
   hours: number;
   minutes: number;
-  seconds: number;
 };
 
 function getTimeLeft(targetMs: number): TimeLeft | null {
@@ -19,7 +18,6 @@ function getTimeLeft(targetMs: number): TimeLeft | null {
     days: Math.floor(totalSeconds / 86400),
     hours: Math.floor((totalSeconds % 86400) / 3600),
     minutes: Math.floor((totalSeconds % 3600) / 60),
-    seconds: totalSeconds % 60,
   };
 }
 
@@ -44,7 +42,7 @@ export function WeddingCountdown() {
     if (Number.isNaN(targetMs)) return;
     const tick = () => setLeft(getTimeLeft(targetMs));
     tick();
-    const id = window.setInterval(tick, 1000);
+    const id = window.setInterval(tick, 60_000);
     return () => window.clearInterval(id);
   }, [targetMs]);
 
@@ -54,13 +52,12 @@ export function WeddingCountdown() {
     <div className="pointer-events-auto inline-block w-full max-w-[min(100%,22rem)] border border-charcoal/20 bg-ivory/92 px-5 py-4 shadow-sm backdrop-blur-sm sm:max-w-[28rem] sm:px-7 sm:py-5">
       <p className="text-xs uppercase tracking-[0.35em] text-earth">{c.label}</p>
       {left ? (
-        <dl className="mt-3 grid grid-cols-4 gap-2 text-center sm:mt-4 sm:gap-4">
+        <dl className="mt-3 grid grid-cols-3 gap-2 text-center sm:mt-4 sm:gap-4">
           {(
             [
               { key: "days" as const, value: left.days },
               { key: "hours" as const, value: left.hours },
               { key: "minutes" as const, value: left.minutes },
-              { key: "seconds" as const, value: left.seconds },
             ] as const
           ).map(({ key, value }) => (
             <div key={key}>

@@ -16,6 +16,8 @@ export type SiteConfig = {
   /** ISO 8601 date/time for countdown (e.g. ceremony start, Lima) */
   weddingCountdownAt?: string;
   GOOGLE_MAPS_URL: string;
+  /** Google Maps embed iframe src for the wedding venue */
+  WEDDING_VENUE_MAP_EMBED_URL?: string;
   GIFT_REGISTRY_URL: string;
   GUEST_MESSAGE_URL: string;
   mapDescription: string;

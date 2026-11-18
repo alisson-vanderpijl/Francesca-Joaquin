@@ -26,6 +26,7 @@ export function GetReadyPlacesGrid({ places }: GetReadyPlacesGridProps) {
           <FadeIn key={place.id} delay={index * 80} className="h-full">
             <RecommendationCard
               item={item}
+              showImage={false}
               showPhone
               labels={{ address, phone }}
             />

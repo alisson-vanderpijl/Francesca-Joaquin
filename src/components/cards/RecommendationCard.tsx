@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import { renderInlineBold } from "@/lib/render-inline-bold";
 import type { Recommendation } from "@/types";
 
 type RecommendationCardProps = {
   item: Recommendation;
+  showImage?: boolean;
   showPhone?: boolean;
   labels?: {
     address?: string;
@@ -13,6 +15,7 @@ type RecommendationCardProps = {
 
 export function RecommendationCard({
   item,
+  showImage = true,
   showPhone = false,
   labels,
 }: RecommendationCardProps) {
@@ -23,28 +26,29 @@ export function RecommendationCard({
 
   return (
     <article className="flex h-full flex-col overflow-hidden border border-charcoal/10 bg-ivory transition-all duration-300 hover:border-charcoal/20">
-      {item.imageUrl ? (
-        <div className="relative aspect-[4/3] w-full shrink-0">
-          <Image
-            src={item.imageUrl}
-            alt={item.name}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+      {showImage &&
+        (item.imageUrl ? (
+          <div className="relative aspect-[4/3] w-full shrink-0">
+            <Image
+              src={item.imageUrl}
+              alt={item.name}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          </div>
+        ) : (
+          <ImagePlaceholder
+            label={placeholderLabel}
+            aspectRatio="landscape"
+            className="w-full shrink-0"
           />
-        </div>
-      ) : (
-        <ImagePlaceholder
-          label={placeholderLabel}
-          aspectRatio="landscape"
-          className="w-full shrink-0"
-        />
-      )}
+        ))}
 
       <div className="flex flex-1 flex-col p-6 md:p-8">
         <h3 className="font-serif text-xl text-charcoal md:text-2xl">{item.name}</h3>
         <p className="mt-3 text-sm leading-relaxed text-charcoal/70">
-          {item.description}
+          {renderInlineBold(item.description)}
         </p>
 
         <dl className="mt-6 space-y-3 text-sm">

@@ -1,4 +1,5 @@
 import type { NavGroup } from "@/types";
+import { WEDDING_VENUE_MAP_EMBED_URL } from "@/data/wedding-venue-map";
 
 export const SITE_CONFIG = {
   coupleNames: "Francesca & Joaquín",
@@ -11,6 +12,7 @@ export const SITE_CONFIG = {
     "Desde dónde hospedarse y dónde comer, hasta qué visitar y cómo vestirse — todo en un solo lugar, pensado especialmente para ustedes.",
   /** Insert the shared Google Maps link here when ready */
   GOOGLE_MAPS_URL: "",
+  WEDDING_VENUE_MAP_EMBED_URL,
   /** External gift registry platform URL */
   GIFT_REGISTRY_URL: "https://example.com/gift-registry",
   /** External link for guests to leave a message (e.g. WhatsApp or form) */

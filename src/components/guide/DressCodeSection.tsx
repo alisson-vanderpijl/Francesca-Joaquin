@@ -4,15 +4,31 @@ import { ImageCard } from "@/components/cards/ImageCard";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { useLanguage } from "@/i18n/LanguageProvider";
 
-export function DressCodeSection() {
+type DressCodeSectionProps = {
+  variant?: "page" | "tab";
+};
+
+export function DressCodeSection({ variant = "page" }: DressCodeSectionProps) {
   const { t } = useLanguage();
   const dressCode = t.wedding.dressCode;
+  const isTab = variant === "tab";
 
   return (
-    <section id="dress-code" className="mt-20 border-t border-charcoal/10 pt-20 md:mt-28 md:pt-28">
+    <section
+      id="dress-code"
+      className={
+        isTab
+          ? ""
+          : "mt-20 border-t border-charcoal/10 pt-20 md:mt-28 md:pt-28"
+      }
+    >
       <FadeIn>
         <header className="mb-12 max-w-2xl md:mb-16">
-          <h2 className="font-serif text-3xl text-charcoal md:text-4xl">
+          <h2
+            className={`font-serif text-charcoal ${
+              isTab ? "text-2xl md:text-3xl" : "text-3xl md:text-4xl"
+            }`}
+          >
             {dressCode.title}
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-charcoal/70 md:text-base">

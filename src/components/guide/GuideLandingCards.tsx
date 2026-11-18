@@ -31,7 +31,7 @@ export function GuideLandingCards() {
 
   return (
     <>
-      <section className="w-full bg-[#f1f1f0] py-10 pt-16 lg:py-12 lg:pt-20">
+      <section className="w-full bg-[#f6f6f5] py-10 pt-16 lg:py-12 lg:pt-20">
         <div className={siteContainerClass}>
           <FadeIn>
             <p className="text-xs uppercase tracking-[0.25em] text-earth">

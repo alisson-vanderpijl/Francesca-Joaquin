@@ -339,19 +339,19 @@ const es = {
           name: "Dédalo",
           district: "Barranco",
           imageLabel: "Dédalo",
+          imageUrl: "/Images/shopping-dedalo.jpg",
           description:
             "Diseño peruano, artesanía, objetos para el hogar y regalos.",
           address: "Av. Sáenz Peña 295, Barranco",
-          websiteUrl: "https://dedalo.pe",
         },
         {
           id: "indian-market",
           name: "Indian Market",
           district: "Miraflores",
           imageLabel: "Indian Market",
+          imageUrl: "/Images/shopping-indian-market.png",
           description: "Artesanía tradicional peruana y recuerdos.",
           address: "Av. Petit Thouars 5200, Miraflores",
-          websiteUrl: "https://www.facebook.com/IndianMarketMiraflores",
         },
         {
           id: "larcomar",
@@ -362,7 +362,6 @@ const es = {
           description:
             "Visita KUNA, Sol Alpaca y Anntarah para ropa y accesorios de alpaca de alta calidad.",
           address: "Malecón de la Reserva 610, Miraflores",
-          websiteUrl: "https://www.larcomar.com",
         },
       ],
       miguelDassoTitle: "Miguel Dasso — San Isidro",
@@ -435,6 +434,7 @@ const es = {
     howToGetThere: {
       title: "Cómo llegar",
       mapLabel: "Placeholder — Mapa con ubicación del evento",
+      mapEmbedTitle: "Fundo Mamacona — Pachacámac",
       transportQuestion: "¿Necesitas transporte?",
     },
     dressCode: {
@@ -779,14 +779,12 @@ const en = {
       "ready-specchi": {
         description:
           "Salon in Miraflores. Book ahead for hair and makeup.",
-        phone: "[Placeholder — phone number]",
       },
       "ready-mig": {
         description: "Hair salon in Miraflores. Book ahead.",
       },
       "ready-marco-aldany": {
         description: "Salon in Miraflores (Av. 28 de Julio). Book ahead.",
-        phone: "[Placeholder — phone number]",
       },
     },
   },
@@ -913,7 +911,7 @@ const en = {
       "lima-pisco-route": {
         name: "Pisco Sour Route — Historic Lima",
         description:
-          "A classic route through Lima’s Historic Centre to try Peru’s iconic Pisco Sour in some of the city’s most traditional and historic venues. Tip: Pisco Sours are stronger than they taste. Venues: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Suggested walking route: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar.",
+          "A classic route through Lima’s Historic Centre to try Peru’s iconic Pisco Sour in some of the city’s most traditional and historic venues. Tip: Pisco Sours are stronger than they taste. **Venues: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Suggested walking route: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar.**",
       },
       "lima-centro": {
         name: "Historic Centre of Lima",
@@ -933,19 +931,19 @@ const en = {
           name: "Dédalo",
           district: "Barranco",
           imageLabel: "Dédalo",
+          imageUrl: "/Images/shopping-dedalo.jpg",
           description:
             "Peruvian design, crafts, home objects and gifts.",
           address: "Av. Sáenz Peña 295, Barranco",
-          websiteUrl: "https://dedalo.pe",
         },
         {
           id: "indian-market",
           name: "Indian Market",
           district: "Miraflores",
           imageLabel: "Indian Market",
+          imageUrl: "/Images/shopping-indian-market.png",
           description: "Traditional Peruvian handicrafts and souvenirs.",
           address: "Av. Petit Thouars 5200, Miraflores",
-          websiteUrl: "https://www.facebook.com/IndianMarketMiraflores",
         },
         {
           id: "larcomar",
@@ -956,7 +954,6 @@ const en = {
           description:
             "Visit KUNA, Sol Alpaca and Anntarah for high-quality alpaca clothing and accessories.",
           address: "Malecón de la Reserva 610, Miraflores",
-          websiteUrl: "https://www.larcomar.com",
         },
       ],
       miguelDassoTitle: "Miguel Dasso — San Isidro",
@@ -1029,6 +1026,7 @@ const en = {
     howToGetThere: {
       title: "How to get there",
       mapLabel: "Placeholder — Map with event location",
+      mapEmbedTitle: "Fundo Mamacona — Pachacámac",
       transportQuestion: "Need transportation?",
     },
     dressCode: {

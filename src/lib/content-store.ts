@@ -114,6 +114,7 @@ const DEFAULTS: Record<ContentSection, unknown> = {
     weddingDate: DEFAULT_SITE_CONFIG.weddingDate,
     weddingCountdownAt: DEFAULT_SITE_CONFIG.weddingCountdownAt,
     GOOGLE_MAPS_URL: DEFAULT_SITE_CONFIG.GOOGLE_MAPS_URL,
+    WEDDING_VENUE_MAP_EMBED_URL: DEFAULT_SITE_CONFIG.WEDDING_VENUE_MAP_EMBED_URL,
     GIFT_REGISTRY_URL: DEFAULT_SITE_CONFIG.GIFT_REGISTRY_URL,
     GUEST_MESSAGE_URL: DEFAULT_SITE_CONFIG.GUEST_MESSAGE_URL,
     mapDescription: DEFAULT_SITE_CONFIG.mapDescription,
@@ -170,7 +171,9 @@ async function writeSection<T>(section: ContentSection, data: T): Promise<void> 
 }
 
 export async function getSiteConfig(): Promise<SiteConfig> {
-  return readSection<SiteConfig>("site-config");
+  const stored = await readSection<SiteConfig>("site-config");
+  const defaults = DEFAULTS["site-config"] as SiteConfig;
+  return { ...defaults, ...stored };
 }
 
 export async function getPageHeaders(): Promise<PageHeaders> {

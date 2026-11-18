@@ -1,6 +1,6 @@
 type ImagePlaceholderProps = {
   label: string;
-  aspectRatio?: "square" | "landscape" | "portrait" | "wide";
+  aspectRatio?: "square" | "landscape" | "portrait" | "wide" | "banner";
   className?: string;
 };
 
@@ -9,6 +9,7 @@ const aspectClasses = {
   landscape: "aspect-[4/3]",
   portrait: "aspect-[3/4]",
   wide: "aspect-[16/9]",
+  banner: "aspect-[160/63]",
 };
 
 export function ImagePlaceholder({

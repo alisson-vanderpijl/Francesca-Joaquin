@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { useLanguage } from "@/i18n/LanguageProvider";
 
 type ShoppingCardPlace = {
@@ -24,8 +23,6 @@ function ShoppingPlaceCard({
   place: ShoppingCardPlace;
   labels: { address: string; visitWebsite: string };
 }) {
-  const placeholderLabel = place.imageLabel ?? place.name;
-
   return (
     <article className="flex h-full flex-col overflow-hidden border border-charcoal/10 bg-ivory transition-all duration-300 hover:border-charcoal/20">
       {place.imageUrl ? (
@@ -38,13 +35,7 @@ function ShoppingPlaceCard({
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         </div>
-      ) : (
-        <ImagePlaceholder
-          label={placeholderLabel}
-          aspectRatio="landscape"
-          className="w-full shrink-0"
-        />
-      )}
+      ) : null}
 
       <div className="flex flex-1 flex-col p-6 md:p-8">
         <h3 className="font-serif text-xl text-charcoal md:text-2xl">{place.name}</h3>

@@ -233,18 +233,18 @@
             "name": "Dédalo",
             "district": "Barranco",
             "imageLabel": "Dédalo",
+            "imageUrl": "/Images/shopping-dedalo.jpg",
             "description": "Diseño peruano, artesanía, objetos para el hogar y regalos.",
-            "address": "Av. Sáenz Peña 295, Barranco",
-            "websiteUrl": "https://dedalo.pe"
+            "address": "Av. Sáenz Peña 295, Barranco"
           },
           {
             "id": "indian-market",
             "name": "Indian Market",
             "district": "Miraflores",
             "imageLabel": "Indian Market",
+            "imageUrl": "/Images/shopping-indian-market.png",
             "description": "Artesanía tradicional peruana y recuerdos.",
-            "address": "Av. Petit Thouars 5200, Miraflores",
-            "websiteUrl": "https://www.facebook.com/IndianMarketMiraflores"
+            "address": "Av. Petit Thouars 5200, Miraflores"
           },
           {
             "id": "larcomar",
@@ -253,8 +253,7 @@
             "imageLabel": "Larcomar",
             "imageUrl": "/Images/Miraflores.jpg",
             "description": "Visita KUNA, Sol Alpaca y Anntarah para ropa y accesorios de alpaca de alta calidad.",
-            "address": "Malecón de la Reserva 610, Miraflores",
-            "websiteUrl": "https://www.larcomar.com"
+            "address": "Malecón de la Reserva 610, Miraflores"
           }
         ],
         "miguelDassoTitle": "Miguel Dasso — San Isidro",
@@ -587,7 +586,7 @@
       "placeOverrides": {
         "lima-pisco-route": {
           "name": "Pisco Sour Route — Historic Lima",
-          "description": "A classic route through Lima's Historic Centre to try Peru's iconic Pisco Sour in some of the city's most traditional and historic venues. Tip: Pisco Sours are stronger than they taste. Venues: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Suggested walking route: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar."
+          "description": "A classic route through Lima's Historic Centre to try Peru's iconic Pisco Sour in some of the city's most traditional and historic venues. Tip: Pisco Sours are stronger than they taste. **Venues: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Suggested walking route: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar.**"
         }
       },
       "shoppingSection": {
@@ -601,18 +600,18 @@
             "name": "Dédalo",
             "district": "Barranco",
             "imageLabel": "Dédalo",
+            "imageUrl": "/Images/shopping-dedalo.jpg",
             "description": "Peruvian design, crafts, home objects and gifts.",
-            "address": "Av. Sáenz Peña 295, Barranco",
-            "websiteUrl": "https://dedalo.pe"
+            "address": "Av. Sáenz Peña 295, Barranco"
           },
           {
             "id": "indian-market",
             "name": "Indian Market",
             "district": "Miraflores",
             "imageLabel": "Indian Market",
+            "imageUrl": "/Images/shopping-indian-market.png",
             "description": "Traditional Peruvian handicrafts and souvenirs.",
-            "address": "Av. Petit Thouars 5200, Miraflores",
-            "websiteUrl": "https://www.facebook.com/IndianMarketMiraflores"
+            "address": "Av. Petit Thouars 5200, Miraflores"
           },
           {
             "id": "larcomar",
@@ -621,8 +620,7 @@
             "imageLabel": "Larcomar",
             "imageUrl": "/Images/Miraflores.jpg",
             "description": "Visit KUNA, Sol Alpaca and Anntarah for high-quality alpaca clothing and accessories.",
-            "address": "Malecón de la Reserva 610, Miraflores",
-            "websiteUrl": "https://www.larcomar.com"
+            "address": "Malecón de la Reserva 610, Miraflores"
           }
         ],
         "miguelDassoTitle": "Miguel Dasso — San Isidro",

@@ -17,8 +17,8 @@ export const getReadyPlaces: Recommendation[] = [
     "category": "get-ready",
     "imageLabel": "SPECCHi",
     "description": "Salón en Miraflores. Reservar con anticipación para peinado y maquillaje.",
-    "address": "Av. Angamos, Miraflores",
-    "phone": "[Placeholder — teléfono]",
+    "address": "Av. Angamos Oeste 1450, Miraflores",
+    "phone": "+51 975 376 335",
     "googleMapsUrl": "https://maps.google.com/?q=SPECCHi+Miraflores"
   },
   {
@@ -28,7 +28,7 @@ export const getReadyPlaces: Recommendation[] = [
     "imageLabel": "MIG Peluqueros",
     "description": "Peluquería en Miraflores. Reservar con anticipación.",
     "address": "Av. Santa Cruz 1105, Miraflores",
-    "phone": "+51 987 573 041",
+    "phone": "+51 (01) 3966137",
     "googleMapsUrl": "https://maps.google.com/?q=MIG+Peluqueros+Miraflores"
   },
   {
@@ -38,7 +38,7 @@ export const getReadyPlaces: Recommendation[] = [
     "imageLabel": "Marco Aldany",
     "description": "Salón en Miraflores (Av. 28 de Julio). Reservar con anticipación.",
     "address": "Av. 28 de Julio 678, Miraflores",
-    "phone": "[Placeholder — teléfono]",
+    "phone": "+51 (01) 2031800",
     "googleMapsUrl": "https://maps.google.com/?q=Marco+Aldany+28+de+Julio+Miraflores"
   }
 ];

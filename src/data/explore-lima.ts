@@ -16,6 +16,7 @@ export const exploreLimaPlaces: Recommendation[] = [
     "name": "Huaca Pucllana",
     "category": "explore-lima",
     "imageLabel": "Huaca Pucllana",
+    "imageUrl": "/Images/explore-lima-huaca-pucllana.jpg",
     "description": "Sitio arqueológico preinca en pleno Miraflores; también hay restaurante con vista a las ruinas iluminadas.",
     "address": "Calle General Borgoña cuadra 8, Miraflores",
     "googleMapsUrl": "https://maps.google.com/?q=Huaca+Pucllana"
@@ -25,6 +26,7 @@ export const exploreLimaPlaces: Recommendation[] = [
     "name": "Barranco",
     "category": "explore-lima",
     "imageLabel": "Barranco",
+    "imageUrl": "/Images/explore-lima-barranco.jpg",
     "description": "Ruta sugerida: Plaza de Barranco → Puente de los Suspiros → Bajada de los Baños → Jr. Domeyer → Av. Pedro de Osma. Distrito bohemio con murales, galerías y cafés.",
     "address": "Barranco, Lima",
     "googleMapsUrl": "https://maps.google.com/?q=Barranco+Lima"
@@ -34,6 +36,7 @@ export const exploreLimaPlaces: Recommendation[] = [
     "name": "Museo Larco",
     "category": "explore-lima",
     "imageLabel": "Museo Larco",
+    "imageUrl": "/Images/explore-lima-museo-larco.jpg",
     "description": "Más de 5.000 años de historia precolombina en una mansión colonial de Pueblo Libre. Si visitas un solo museo en Lima, que sea este.",
     "address": "Av. Bolívar 1515, Pueblo Libre",
     "websiteUrl": "https://www.museolarco.org",
@@ -44,7 +47,8 @@ export const exploreLimaPlaces: Recommendation[] = [
     "name": "Ruta Pisco Sour — Lima histórica",
     "category": "explore-lima",
     "imageLabel": "Ruta Pisco Sour",
-    "description": "Un recorrido clásico por el Centro Histórico para probar el icónico Pisco Sour en algunos de los bares más tradicionales y con historia de la ciudad. Consejo: los Pisco Sour son más fuertes de lo que saben. Lugares: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Ruta sugerida a pie: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar.",
+    "imageUrl": "/Images/explore-lima-ruta-pisco-sour.jpg",
+    "description": "Un recorrido clásico por el Centro Histórico para probar el icónico Pisco Sour en algunos de los bares más tradicionales y con historia de la ciudad. Consejo: los Pisco Sour son más fuertes de lo que saben. **Lugares: Hotel Maury, Museo del Pisco, Bar Cordano, Gran Hotel Bolívar / El Bolivarcito. Ruta sugerida a pie: Hotel Maury → Museo del Pisco → Bar Cordano → Gran Hotel Bolívar.**",
     "address": "Centro Histórico de Lima",
     "googleMapsUrl": "https://maps.google.com/?q=Hotel+Maury+Lima"
   },
@@ -53,6 +57,7 @@ export const exploreLimaPlaces: Recommendation[] = [
     "name": "Centro Histórico de Lima",
     "category": "explore-lima",
     "imageLabel": "Centro Histórico",
+    "imageUrl": "/Images/explore-lima-centro-historico.jpg",
     "description": "Visita de medio día (preferible con guía): Plaza Mayor → Catedral → entorno del Palacio de Gobierno → Monasterio de San Francisco y catacumbas → balcones coloniales.",
     "address": "Centro de Lima",
     "googleMapsUrl": "https://maps.google.com/?q=Plaza+Mayor+Lima"
