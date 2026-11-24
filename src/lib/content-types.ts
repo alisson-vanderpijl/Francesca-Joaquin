@@ -72,8 +72,11 @@ export type ContentSection =
   | "translations"
   | "nav-groups";
 
-/** Sections editable from /admin (itineraries only). */
-export type AdminEditableSection = "itinerary-events" | "wedding-events";
+/** Sections editable from /admin. */
+export type AdminEditableSection =
+  | "itinerary-events"
+  | "wedding-events"
+  | "gift-registry";
 
 export const ADMIN_CONTENT_SECTIONS: {
   id: AdminEditableSection;
@@ -81,6 +84,7 @@ export const ADMIN_CONTENT_SECTIONS: {
 }[] = [
   { id: "itinerary-events", label: "El Itinerario" },
   { id: "wedding-events", label: "La Boda — Itinerario del día" },
+  { id: "gift-registry", label: "Lista de regalos" },
 ];
 
 export type {

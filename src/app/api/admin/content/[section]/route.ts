@@ -9,6 +9,7 @@ import {
 const VALID_SECTIONS = new Set<ContentSection>([
   "itinerary-events",
   "wedding-events",
+  "site-config",
 ]);
 
 type RouteContext = {

@@ -489,7 +489,7 @@ const es = {
       buses: {
         title: "Buses",
         description:
-          "Tendremos buses para el día de la boda saliendo desde los hoteles Intercontinental e Indigo, y Ibis Lima Larco.",
+          "Tendremos buses para el día de la boda saliendo desde los hoteles Intercontinental e Indigo, y IBIS Lima Larco.",
         note: "Más información en cuanto a horarios, próximamente",
       },
     },
@@ -1132,7 +1132,7 @@ const en = {
       buses: {
         title: "Shuttle buses",
         description:
-          "We'll have shuttle buses on the wedding day departing from the InterContinental, Indigo, and Ibis Lima Larco hotels.",
+          "We'll have shuttle buses on the wedding day departing from the InterContinental, Indigo, and IBIS Lima Larco hotels.",
         note: "More information on schedules coming soon",
       },
     },

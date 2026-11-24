@@ -12,7 +12,7 @@ export const hotels: Hotel[] = [
     "roomRate": "Desde USD 260 Hasta USD 565",
     "address": "Mal. de la Reserva 751, Miraflores 15074",
     "phone": "+51 986 662 859",
-    "websiteUrl": "https://www.ihg.com/intercontinental/hotels/us/en/lima/limha/hoteldetail",
+    "websiteUrl": "https://www.ihg.com/intercontinental/hotels/es/es/lima/limha/hoteldetail",
     "googleMapsUrl": "https://maps.google.com/?q=Hotel+InterContinental+Lima",
     "priceLevel": 4
   },
@@ -27,7 +27,7 @@ export const hotels: Hotel[] = [
     "roomRate": "Desde USD 140 Hasta USD 265",
     "address": "Calle Alcanfores 1332, Miraflores 15074",
     "phone": "+51 986 662 859",
-    "websiteUrl": "https://www.ihg.com/hotelindigo/hotels/us/en/lima/limin/hoteldetail",
+    "websiteUrl": "https://www.ihg.com/hotelindigo/hotels/es/es/lima/limmd/hoteldetail",
     "googleMapsUrl": "https://maps.google.com/?q=Hotel+Indigo+Lima+Miraflores",
     "priceLevel": 3
   },
@@ -42,7 +42,7 @@ export const hotels: Hotel[] = [
     "roomRate": "Desde USD 60",
     "address": "Av. José Larco 1140, Miraflores 15074",
     "phone": "+51 (01) 6348888",
-    "websiteUrl": "https://all.accor.com",
+    "websiteUrl": "https://all.accor.com/booking/es/ibis/hotels/miraflores-peru",
     "googleMapsUrl": "https://maps.google.com/?q=ibis+Lima+Larco+Miraflores",
     "priceLevel": 1
   }

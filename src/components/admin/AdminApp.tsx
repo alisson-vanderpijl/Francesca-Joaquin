@@ -6,8 +6,14 @@ import { Button } from "@/components/ui/Button";
 import {
   ADMIN_CONTENT_SECTIONS,
   type AdminEditableSection,
+  type SiteConfig,
   type WeddingEvent,
 } from "@/lib/content-types";
+
+function contentApiPath(view: Exclude<AdminView, "rsvps">): string {
+  if (view === "gift-registry") return "/api/admin/content/site-config";
+  return `/api/admin/content/${view}`;
+}
 
 type AdminView = AdminEditableSection | "rsvps";
 
@@ -60,7 +66,7 @@ export function AdminApp() {
     }
 
     try {
-      const res = await fetch(`/api/admin/content/${section}`);
+      const res = await fetch(contentApiPath(section));
       if (!res.ok) throw new Error();
       setData(await res.json());
       setLoadedSection(section);
@@ -123,7 +129,7 @@ export function AdminApp() {
     setSaving(true);
     setMessage("");
     try {
-      const res = await fetch(`/api/admin/content/${activeView}`, {
+      const res = await fetch(contentApiPath(activeView), {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -154,7 +160,7 @@ export function AdminApp() {
         >
           <h1 className="font-serif text-3xl text-charcoal">Admin</h1>
           <p className="mt-2 text-sm text-charcoal/60">
-            Itinerarios y confirmaciones RSVP
+            Itinerarios, lista de regalos y RSVPs
           </p>
           <div className="mt-8">
             <AdminField
@@ -183,7 +189,7 @@ export function AdminApp() {
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
           <div>
             <h1 className="font-serif text-2xl text-charcoal">Admin</h1>
-            <p className="text-xs text-charcoal/50">Itinerarios y RSVPs</p>
+            <p className="text-xs text-charcoal/50">Itinerarios, lista de regalos y RSVPs</p>
           </div>
           <div className="flex items-center gap-3">
             <Button href="/guide" variant="ghost" className="text-xs">
@@ -273,6 +279,12 @@ export function AdminApp() {
                   hint="Itinerario hora a hora del día de la boda en la página La Boda."
                 />
               )}
+              {activeView === "gift-registry" && data != null && (
+                <GiftRegistryEditor
+                  data={data as SiteConfig}
+                  onChange={setData}
+                />
+              )}
               {activeView === "rsvps" && data != null && (
                 <RsvpsTable data={data as RsvpRow[]} />
               )}
@@ -295,6 +307,46 @@ type RsvpRow = {
   arrivalDate?: string;
   createdAt: string;
 };
+
+function GiftRegistryEditor({
+  data,
+  onChange,
+}: {
+  data: SiteConfig;
+  onChange: (data: unknown) => void;
+}) {
+  const url = data.GIFT_REGISTRY_URL ?? "";
+
+  return (
+    <div className="space-y-6">
+      <p className="text-sm text-charcoal/60">
+        Enlace del botón en la página Lista de regalos. Se abre en una pestaña nueva.
+      </p>
+      <AdminField
+        label="URL del botón"
+        type="url"
+        value={url}
+        onChange={(value) =>
+          onChange({
+            ...data,
+            GIFT_REGISTRY_URL: value.trim(),
+          })
+        }
+        placeholder="https://..."
+      />
+      {url ? (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-xs uppercase tracking-widest text-charcoal/50 hover:text-charcoal"
+        >
+          Probar enlace →
+        </a>
+      ) : null}
+    </div>
+  );
+}
 
 function WeddingEventsEditor({
   data,
