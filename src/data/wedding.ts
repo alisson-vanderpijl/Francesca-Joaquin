@@ -7,38 +7,23 @@ export const weddingEvents: WeddingEvent[] = [
     title: "Ceremonia",
     date: "Sábado 3 de abril de 2027",
     time: "3:30 PM",
-    location: "Templo Inmaculado Corazón de María",
+    location: "Templo Inmaculado Corazón de María - Orden de San Agustín",
     address: "Alameda La Encantada - Chorrillos, Lima",
-    description: "",
-    googleMapsUrl:
-      "https://maps.google.com/?q=Templo+Inmaculado+Corazon+de+Maria+Alameda+La+Encantada+Chorrillos+Lima",
+    description:
+      "Van a haber buses que salen de ciertos puntos de Miraflores para llevarlos a la ceremonia. El detalle se dará más cerca a la fecha.",
     additionalInfo:
       "[Información adicional placeholder — ej. código de vestimenta, estacionamiento, etc.]",
   },
   {
     id: "event-2",
-    title: "Cocktail",
+    title: "Cocktail y Fiesta",
     date: "Sábado 3 de abril de 2027",
-    time: "5:30 PM",
+    time: "5:30 PM (Cocktail) · 7:00 PM (Fiesta)",
     location: "Fundo Mamacona",
     address: "Parcela 3, Alameda Mamacona, Mamacona, Pachacamac",
-    description: "",
-    googleMapsUrl:
-      "https://maps.google.com/?q=Fundo+Mamacona+Parcela+3+Alameda+Mamacona+Pachacamac",
+    description:
+      "Van a haber buses que los van a llevar de la Ceremonia a la fiesta. El detalle se dará más cerca a la fecha.",
     additionalInfo:
       "[Información adicional placeholder — ej. asientos reservados, acceso, etc.]",
-  },
-  {
-    id: "event-3",
-    title: "Fiesta",
-    date: "Sábado 3 de abril de 2027",
-    time: "7:00 PM",
-    location: "Fundo Mamacona",
-    address: "Parcela 3, Alameda Mamacona, Mamacona, Pachacamac",
-    description: "",
-    googleMapsUrl:
-      "https://maps.google.com/?q=Fundo+Mamacona+Parcela+3+Alameda+Mamacona+Pachacamac",
-    additionalInfo:
-      "[Información adicional placeholder — ej. horario de cena, mesas, etc.]",
   },
 ];

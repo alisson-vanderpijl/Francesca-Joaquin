@@ -8,6 +8,7 @@ import { Timeline } from "@/components/timeline/Timeline";
 import { useSiteConfig } from "@/components/providers/ContentProvider";
 import { WEDDING_VENUE_MAP_EMBED_URL } from "@/data/wedding-venue-map";
 import { useLanguage } from "@/i18n/LanguageProvider";
+import { localizeWeddingEvents } from "@/lib/localize-wedding-events";
 import type { WeddingEvent } from "@/types";
 
 export const WEDDING_TAB_IDS = [
@@ -31,8 +32,9 @@ function tabIdFromHash(hash: string): WeddingTabId | null {
 }
 
 export function WeddingTabbedSections({ weddingEvents }: WeddingTabbedSectionsProps) {
-  const { t } = useLanguage();
+  const { locale, t } = useLanguage();
   const siteConfig = useSiteConfig();
+  const events = localizeWeddingEvents(weddingEvents, locale);
   const howToGetThere = t.wedding.howToGetThere;
   const mapEmbedUrl =
     siteConfig.WEDDING_VENUE_MAP_EMBED_URL?.trim() || WEDDING_VENUE_MAP_EMBED_URL;
@@ -138,11 +140,8 @@ export function WeddingTabbedSections({ weddingEvents }: WeddingTabbedSectionsPr
               {taxi.title}
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-charcoal/70">
-              {taxi.description}
+              {howToGetThere.taxiDescription}
             </p>
-            {taxi.note?.trim() ? (
-              <p className="mt-4 text-xs text-charcoal/45">{taxi.note}</p>
-            ) : null}
           </article>
         </div>
       </div>
@@ -162,7 +161,7 @@ export function WeddingTabbedSections({ weddingEvents }: WeddingTabbedSectionsPr
             {t.wedding.timeline.subtitle}
           </p>
         </header>
-        <Timeline events={weddingEvents} showDates />
+        <Timeline events={events} showDates />
       </div>
 
       <div

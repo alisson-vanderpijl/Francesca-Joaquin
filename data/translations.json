@@ -88,6 +88,7 @@
         "guestGuideDesc": "Hospedaje, restaurantes, actividades y recomendaciones para su estadía.",
         "menuHint": "Explore el menú para acceder a todas las secciones.",
         "explore": "Ver más",
+        "weddingPlanner": "Para consultas acerca de nuestra boda, pueden contactar también a nuestra Wedding Planner: Verónica Kohler **+51 992754861** (solo WhatsApp).",
         "countdown": {
           "label": "Faltan",
           "days": "días",
@@ -145,7 +146,7 @@
           "phone": "+511 612 5000"
         }
       ],
-      "hospitalsTitle": "Hospitales",
+      "hospitalsTitle": "Clínicas",
       "phoneLabel": "Teléfono",
       "websiteLabel": "Sitio web",
       "addressLabel": "Dirección",
@@ -326,7 +327,8 @@
       "howToGetThere": {
         "title": "Cómo llegar",
         "mapLabel": "Placeholder — Mapa con ubicación del evento",
-        "transportQuestion": "¿Necesitas transporte?"
+        "transportQuestion": "¿Necesitas transporte?",
+        "taxiDescription": "Para aquellos que deseen movilizarse en horarios diferentes a los que ofreceremos con los buses, podremos ayudarlos a conseguir taxis con el personal de seguridad del evento."
       },
       "dressCode": {
         "title": "Dress Code",
@@ -347,24 +349,24 @@
         "intro": "Queremos que disfruten de la celebración sin preocupaciones. Hemos organizado diferentes opciones de transporte para que puedan regresar de manera segura.",
         "designatedDrivers": {
           "title": "Choferes de reemplazo",
-          "description": "Contaremos con choferes de reemplazo para que puedan disfrutar de la celebración sin preocuparse por conducir.",
-          "note": "[Placeholder — horarios, punto de encuentro y contacto]"
+          "description": "Contaremos con choferes de reemplazo para que puedan disfrutar de la celebración sin preocuparse por conducir.\n\nGestionar su reserva al llegar al evento.",
+          "note": ""
         },
         "taxi": {
           "title": "Taxis",
-          "description": "Tendremos servicio de taxi disponible para facilitar el regreso de los invitados al finalizar la celebración.",
+          "description": "Tendremos servicio de taxi disponible para facilitar el regreso de los invitados al finalizar la celebración.\n\nGestionar su reserva al llegar al evento.",
           "note": ""
         },
         "buses": {
           "title": "Buses",
-          "description": "Tendremos diferentes buses que saldrán desde distintos puntos de Lima para llevar a los invitados al evento.",
-          "note": "Horarios y ubicación por confirmar"
+          "description": "Tendremos buses para el día de la boda saliendo desde los hoteles Intercontinental e Indigo, y Ibis Lima Larco.",
+          "note": "Más información en cuanto a horarios, próximamente"
         }
       }
     },
     "giftRegistry": {
       "title": "Lista de regalos",
-      "description": "Si desean hacernos un regalo, pueden encontrar nuestra lista aquí.",
+      "description": "Contar con ustedes en nuestro día es lo más importante para nosotros. Sin embargo, si desean hacernos un regalo pueden encontrar nuestra lista aquí.",
       "cta": "Ver lista de regalos",
       "externalNote": "Se abre en una plataforma externa"
     }
@@ -458,6 +460,7 @@
         "guestGuideDesc": "Accommodation, restaurants, activities, and recommendations for your stay.",
         "menuHint": "Explore the menu to access all sections.",
         "explore": "See more",
+        "weddingPlanner": "For questions about our wedding, you can also contact our wedding planner: Verónica Kohler **+51 992754861** (WhatsApp only).",
         "countdown": {
           "label": "Countdown",
           "days": "days",
@@ -515,7 +518,7 @@
           "phone": "+511 612 5000"
         }
       ],
-      "hospitalsTitle": "Hospitals",
+      "hospitalsTitle": "Clinics",
       "phoneLabel": "Phone",
       "websiteLabel": "Website",
       "addressLabel": "Address",
@@ -706,7 +709,8 @@
       "howToGetThere": {
         "title": "How to get there",
         "mapLabel": "Placeholder — Map with event location",
-        "transportQuestion": "Need transportation?"
+        "transportQuestion": "Need transportation?",
+        "taxiDescription": "If you need to travel at times other than the shuttle buses, our event security team can help you arrange a taxi."
       },
       "dressCode": {
         "title": "Dress Code",
@@ -727,24 +731,24 @@
         "intro": "We want you to enjoy the celebration worry-free. We've organized different transportation options so you can get back safely.",
         "designatedDrivers": {
           "title": "Designated drivers",
-          "description": "We'll have designated drivers available so you can enjoy the celebration without worrying about driving.",
-          "note": "[Placeholder — schedule, meeting point, and contact]"
+          "description": "We'll have designated drivers available so you can enjoy the celebration without worrying about driving.\n\nArrange your booking when you arrive at the event.",
+          "note": ""
         },
         "taxi": {
           "title": "Taxis",
-          "description": "We'll have taxi service available to help guests get home at the end of the celebration.",
+          "description": "We'll have taxi service available to help guests get home at the end of the celebration.\n\nArrange your booking when you arrive at the event.",
           "note": ""
         },
         "buses": {
           "title": "Shuttle buses",
-          "description": "We'll have shuttle buses departing from different points in Lima to take guests to the event.",
-          "note": "Schedule and location to be confirmed"
+          "description": "We'll have shuttle buses on the wedding day departing from the InterContinental, Indigo, and Ibis Lima Larco hotels.",
+          "note": "More information on schedules coming soon"
         }
       }
     },
     "giftRegistry": {
       "title": "Gift Registry",
-      "description": "If you'd like to give us a gift, you can find our registry here.",
+      "description": "Having you with us on our wedding day means the most to us. If you would still like to give us a gift, you can find our registry here.",
       "cta": "View gift registry",
       "externalNote": "Opens on an external platform"
     }

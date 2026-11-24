@@ -3,10 +3,14 @@
 import Link from "next/link";
 import { GuideIcon, guideCardIconClass } from "@/components/guide/GuideIcons";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { useNavGroups } from "@/components/providers/ContentProvider";
+import {
+  useNavGroups,
+  useSiteConfig,
+} from "@/components/providers/ContentProvider";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import type { NavItemId } from "@/types";
 import { siteContainerClass } from "@/lib/layout-classes";
+import { renderInlineBold } from "@/lib/render-inline-bold";
 
 const WEDDING_IDS: NavItemId[] = ["itinerary", "wedding", "giftRegistry"];
 const GUEST_IDS: NavItemId[] = [
@@ -16,12 +20,12 @@ const GUEST_IDS: NavItemId[] = [
   "health",
   "exploreLima",
   "explorePeru",
-  "map",
   "practicalInfo",
 ];
 
 export function GuideLandingCards() {
   const { t } = useLanguage();
+  const siteConfig = useSiteConfig();
   const navGroups = useNavGroups();
 
   function getHref(id: NavItemId): string {
@@ -31,6 +35,31 @@ export function GuideLandingCards() {
 
   return (
     <>
+      <section className="w-full bg-ivory py-16 lg:py-20">
+        <div className={`${siteContainerClass} text-center`}>
+          <div className="mx-auto max-w-2xl">
+          <FadeIn>
+            <h2 className="font-serif text-3xl leading-snug text-charcoal md:text-4xl">
+              {t.onboarding.guideIntroTitle}
+            </h2>
+          </FadeIn>
+          <FadeIn delay={80}>
+            <p className="mt-8 text-sm leading-relaxed text-charcoal/70 md:text-base md:leading-relaxed">
+              {t.onboarding.guideIntroMessage}
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-charcoal/70 md:text-base md:leading-relaxed">
+              {t.onboarding.guideIntroMessageSecond}
+            </p>
+          </FadeIn>
+          <FadeIn delay={140}>
+            <p className="mt-8 text-xs uppercase tracking-[0.3em] text-earth">
+              {t.onboarding.guideIntroSignoff} {siteConfig.coupleNames}
+            </p>
+          </FadeIn>
+          </div>
+        </div>
+      </section>
+
       <section className="w-full bg-[#f6f6f5] py-10 pt-16 lg:py-12 lg:pt-20">
         <div className={siteContainerClass}>
           <FadeIn>
@@ -90,6 +119,16 @@ export function GuideLandingCards() {
               </Link>
             </FadeIn>
           ))}
+        </div>
+      </section>
+
+      <section className="w-full bg-[#f6f6f5] py-12 lg:py-16">
+        <div className={siteContainerClass}>
+          <FadeIn>
+            <p className="mx-auto max-w-2xl text-center text-sm leading-relaxed text-charcoal/70 md:text-base">
+              {renderInlineBold(t.guide.landing.weddingPlanner)}
+            </p>
+          </FadeIn>
         </div>
       </section>
     </>

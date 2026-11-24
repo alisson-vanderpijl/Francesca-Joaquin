@@ -39,7 +39,6 @@ export const NAV_GROUPS: NavGroup[] = [
       { id: "health", href: "/guide/health" },
       { id: "exploreLima", href: "/guide/explore-lima" },
       { id: "explorePeru", href: "/guide/explore-peru" },
-      { id: "map", href: "/guide/map" },
       { id: "practicalInfo", href: "/guide/practical-information" },
     ],
   },

@@ -3,6 +3,7 @@
 import { Timeline } from "@/components/timeline/Timeline";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { useLanguage } from "@/i18n/LanguageProvider";
+import { localizeItineraryEvents } from "@/lib/localize-wedding-events";
 import type { WeddingEvent } from "@/types";
 
 type ItineraryPageContentProps = {
@@ -12,7 +13,8 @@ type ItineraryPageContentProps = {
 export function ItineraryPageContent({
   itineraryEvents,
 }: ItineraryPageContentProps) {
-  const { t } = useLanguage();
+  const { locale, t } = useLanguage();
+  const events = localizeItineraryEvents(itineraryEvents, locale);
 
   return (
     <>
@@ -28,7 +30,7 @@ export function ItineraryPageContent({
       </FadeIn>
 
       <FadeIn delay={100}>
-        <Timeline events={itineraryEvents} showDates />
+        <Timeline events={events} showDates />
       </FadeIn>
     </>
   );

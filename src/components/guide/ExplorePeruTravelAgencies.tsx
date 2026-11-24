@@ -3,6 +3,7 @@
 import { TravelAgencyCard } from "@/components/cards/TravelAgencyCard";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { useLanguage } from "@/i18n/LanguageProvider";
+import { withLocaleOverride } from "@/lib/localize-item";
 import type { TravelAgency } from "@/types";
 
 type ExplorePeruTravelAgenciesProps = {
@@ -12,7 +13,7 @@ type ExplorePeruTravelAgenciesProps = {
 export function ExplorePeruTravelAgencies({
   agencies,
 }: ExplorePeruTravelAgenciesProps) {
-  const { t } = useLanguage();
+  const { locale, t } = useLanguage();
   const section = t.explorePeruPage;
 
   return (
@@ -31,7 +32,15 @@ export function ExplorePeruTravelAgencies({
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {agencies.map((agency, index) => (
           <FadeIn key={agency.id} delay={index * 80}>
-            <TravelAgencyCard agency={agency} />
+            <TravelAgencyCard
+              agency={withLocaleOverride(
+                agency,
+                locale,
+                section.agencyOverrides as
+                  | Record<string, Partial<TravelAgency>>
+                  | undefined,
+              )}
+            />
           </FadeIn>
         ))}
       </div>

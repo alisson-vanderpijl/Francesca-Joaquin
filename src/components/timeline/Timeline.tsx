@@ -52,20 +52,22 @@ export function Timeline({ events, showDates = false }: TimelineProps) {
               >
                 <p className="text-sm font-medium text-charcoal">{event.location}</p>
                 <p className="mt-2 text-sm text-charcoal/60">{event.address}</p>
+                {event.description?.trim() ? (
+                  <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-charcoal/70">
+                    {event.description}
+                  </p>
+                ) : null}
                 {event.googleMapsUrl ? (
                   <a
                     href={event.googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-block text-xs uppercase tracking-widest text-charcoal/60 transition-colors hover:text-charcoal"
+                    className={`inline-block text-xs uppercase tracking-widest text-charcoal/60 transition-colors hover:text-charcoal ${
+                      event.description?.trim() ? "mt-4" : "mt-3"
+                    }`}
                   >
                     {mapsLabel}
                   </a>
-                ) : null}
-                {event.description?.trim() ? (
-                  <p className="mt-4 text-sm leading-relaxed text-charcoal/70">
-                    {event.description}
-                  </p>
                 ) : null}
               </div>
 

@@ -45,7 +45,7 @@ export function TransportSection({ variant = "page" }: TransportSectionProps) {
               <h3 className="font-serif text-xl text-charcoal md:text-2xl">
                 {option.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-charcoal/70">
+              <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-charcoal/70">
                 {option.description}
               </p>
               {option.note?.trim() ? (

@@ -26,7 +26,7 @@ export function Footer() {
       >
         <p className="font-serif text-xl text-ivory">{siteConfig.coupleNames}</p>
         <p className="max-w-md text-sm leading-relaxed text-ivory/75">
-          {siteConfig.weddingDate}
+          {t.footer.weddingDate}
         </p>
         <div className="flex gap-6 pt-2">
           <Link

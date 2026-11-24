@@ -1,4 +1,7 @@
+"use client";
+
 import { Button } from "@/components/ui/Button";
+import { useLanguage } from "@/i18n/LanguageProvider";
 import type { TravelAgency } from "@/types";
 
 type TravelAgencyCardProps = {
@@ -6,6 +9,8 @@ type TravelAgencyCardProps = {
 };
 
 export function TravelAgencyCard({ agency }: TravelAgencyCardProps) {
+  const { t } = useLanguage();
+
   return (
     <article className="flex h-full flex-col overflow-hidden border border-charcoal/10 bg-ivory transition-all duration-300 hover:border-charcoal/20">
       <div className="flex flex-1 flex-col p-6 md:p-8">
@@ -26,7 +31,7 @@ export function TravelAgencyCard({ agency }: TravelAgencyCardProps) {
               variant="secondary"
               className="w-full sm:w-auto"
             >
-              Contactar
+              {t.cardLabels.contact}
             </Button>
           </div>
         )}

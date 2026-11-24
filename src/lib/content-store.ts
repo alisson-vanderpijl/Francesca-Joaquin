@@ -64,7 +64,7 @@ const DEFAULT_PAGE_HEADERS: PageHeaders = {
   getReady: {
     title: "Dónde arreglarse",
     subtitle:
-      "Salones, spas y barberías para arreglarse antes del matrimonio. Reserva con anticipación.",
+      "Salones para arreglarse antes del matrimonio. Reserva con anticipación.",
   },
   health: {
     title: "Salud y emergencias",

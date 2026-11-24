@@ -5,7 +5,7 @@ import type { Locale } from "./types";
 const es = {
   onboarding: {
     continueInSpanish: "Continuar en Español",
-    continueInEnglish: "English",
+    continueInEnglish: "Continue in English",
     rsvpStatusQuestion: "¿Ya registraste tu asistencia?",
     rsvpYes: "Sí",
     rsvpNo: "No",
@@ -52,7 +52,7 @@ const es = {
     getReady: {
       title: "Dónde arreglarse",
       subtitle:
-        "Salones, spas y barberías para arreglarse antes del matrimonio. Reserva con anticipación.",
+        "Salones para arreglarse antes del matrimonio. Reserva con anticipación.",
     },
     health: {
       title: "Salud y emergencias",
@@ -85,6 +85,7 @@ const es = {
     phone: "Teléfono",
     roomRate: "Tarifas",
     visitWebsite: "Visitar sitio web",
+    contact: "Contactar",
     viewAirbnb: "Ver en Airbnb",
     googleMaps: "Ver en Google Maps →",
     location: "Ubicación",
@@ -118,6 +119,7 @@ const es = {
   footer: {
     rsvp: "RSVP",
     guide: "Guía",
+    weddingDate: "3 de Abril de 2027 - Lima, Perú",
   },
   rsvp: {
     back: "← Volver",
@@ -179,6 +181,8 @@ const es = {
         "Hospedaje, restaurantes, actividades y recomendaciones para su estadía.",
       menuHint: "Explore el menú para acceder a todas las secciones.",
       explore: "Ver más",
+      weddingPlanner:
+        "Para consultas acerca de nuestra boda, pueden contactar también a nuestra Wedding Planner: Verónica Kohler **+51 992754861** (solo WhatsApp).",
       countdown: {
         label: "Faltan",
         days: "días",
@@ -194,6 +198,7 @@ const es = {
     travelAgenciesSubtitle:
       "Agencias recomendadas para organizar excursiones y extensiones de tu viaje por Perú.",
     placeOverrides: {},
+    agencyOverrides: {},
   },
   stayPage: {
     hotelOverrides: {},
@@ -225,6 +230,7 @@ const es = {
     servicesLabel: "Servicios",
     phoneLabel: "Teléfono",
     placeOverrides: {},
+    providerOverrides: {},
   },
   healthPage: {
     emergencyTitle: "Emergencia médica",
@@ -246,7 +252,7 @@ const es = {
         phone: "+511 612 5000",
       },
     ],
-    hospitalsTitle: "Hospitales",
+    hospitalsTitle: "Clínicas",
     phoneLabel: "Teléfono",
     websiteLabel: "Sitio web",
     addressLabel: "Dirección",
@@ -444,6 +450,8 @@ const es = {
       mapLabel: "Placeholder — Mapa con ubicación del evento",
       mapEmbedTitle: "Fundo Mamacona — Pachacámac",
       transportQuestion: "¿Necesitas transporte?",
+      taxiDescription:
+        "Para aquellos que deseen movilizarse en horarios diferentes a los que ofreceremos con los buses, podremos ayudarlos a conseguir taxis con el personal de seguridad del evento.",
     },
     dressCode: {
       title: "Dress Code",
@@ -469,27 +477,27 @@ const es = {
       designatedDrivers: {
         title: "Choferes de reemplazo",
         description:
-          "Contaremos con choferes de reemplazo para que puedan disfrutar de la celebración sin preocuparse por conducir.",
-        note: "[Placeholder — horarios, punto de encuentro y contacto]",
+          "Contaremos con choferes de reemplazo para que puedan disfrutar de la celebración sin preocuparse por conducir.\n\nGestionar su reserva al llegar al evento.",
+        note: "",
       },
       taxi: {
         title: "Taxis",
         description:
-          "Tendremos servicio de taxi disponible para facilitar el regreso de los invitados al finalizar la celebración.",
+          "Tendremos servicio de taxi disponible para facilitar el regreso de los invitados al finalizar la celebración.\n\nGestionar su reserva al llegar al evento.",
         note: "",
       },
       buses: {
         title: "Buses",
         description:
-          "Tendremos diferentes buses que saldrán desde distintos puntos de Lima para llevar a los invitados al evento.",
-        note: "Horarios y ubicación por confirmar",
+          "Tendremos buses para el día de la boda saliendo desde los hoteles Intercontinental e Indigo, y Ibis Lima Larco.",
+        note: "Más información en cuanto a horarios, próximamente",
       },
     },
   },
   giftRegistry: {
     title: "Lista de regalos",
     description:
-      "Si desean hacernos un regalo, pueden encontrar nuestra lista aquí.",
+      "Contar con ustedes en nuestro día es lo más importante para nosotros. Sin embargo, si desean hacernos un regalo pueden encontrar nuestra lista aquí.",
     cta: "Ver lista de regalos",
     externalNote: "Se abre en una plataforma externa",
   },
@@ -545,12 +553,12 @@ const en = {
     getReady: {
       title: "Get Ready",
       subtitle:
-        "Salons, spas, and barbershops to get ready before the wedding. Book in advance.",
+        "Salons to get ready before the wedding. Book in advance.",
     },
     health: {
       title: "Health & Emergencies",
       subtitle:
-        "Trusted contacts for medical emergencies, pharmacies, and hospitals near Miraflores and San Isidro.",
+        "Trusted contacts for medical emergencies, pharmacies, and clinics near Miraflores and San Isidro.",
     },
     practicalInfo: {
       title: "Practical Information",
@@ -578,6 +586,7 @@ const en = {
     phone: "Phone",
     roomRate: "Rates",
     visitWebsite: "Visit website",
+    contact: "Contact",
     viewAirbnb: "View on Airbnb",
     googleMaps: "View on Google Maps →",
     location: "Location",
@@ -632,6 +641,7 @@ const en = {
   footer: {
     rsvp: "RSVP",
     guide: "Guide",
+    weddingDate: "April 3, 2027 — Lima, Peru",
   },
   rsvp: {
     back: "← Back",
@@ -693,6 +703,8 @@ const en = {
         "Accommodation, restaurants, activities, and recommendations for your stay.",
       menuHint: "Explore the menu to access all sections.",
       explore: "See more",
+      weddingPlanner:
+        "For questions about our wedding, you can also contact our wedding planner: Verónica Kohler **+51 992754861** (WhatsApp only).",
       countdown: {
         label: "Countdown",
         days: "days",
@@ -707,6 +719,12 @@ const en = {
     travelAgenciesTitle: "Travel agencies",
     travelAgenciesSubtitle:
       "Recommended agencies to help plan extensions and tours across Peru.",
+    agencyOverrides: {
+      "machu-travel-peru": {
+        description:
+          "Recommended agency for private custom tours and multi-day itineraries across Peru.",
+      },
+    },
     placeOverrides: {
       "peru-cusco": {
         name: "Cusco & Machu Picchu",
@@ -795,6 +813,32 @@ const en = {
         description: "Salon in Miraflores (Av. 28 de Julio). Book ahead.",
       },
     },
+    providerOverrides: {
+      "at-home-1": {
+        name: "[Makeup artist placeholder — Ana]",
+        services: [
+          "Social and event makeup",
+          "Bridal makeup",
+          "Makeup trial",
+        ],
+      },
+      "at-home-2": {
+        name: "[Hairstylist placeholder — Carlos]",
+        services: [
+          "Event hairstyling",
+          "Updos and styling",
+          "Wedding look advice",
+        ],
+      },
+      "at-home-3": {
+        name: "[Makeup & hair placeholder — Studio]",
+        services: [
+          "In-room makeup and hair",
+          "Service for bridesmaids and guests",
+          "Group coordination",
+        ],
+      },
+    },
   },
   healthPage: {
     emergencyTitle: "Medical emergency",
@@ -816,7 +860,7 @@ const en = {
         phone: "+511 612 5000",
       },
     ],
-    hospitalsTitle: "Hospitals",
+    hospitalsTitle: "Clinics",
     phoneLabel: "Phone",
     websiteLabel: "Website",
     addressLabel: "Address",
@@ -1049,6 +1093,8 @@ const en = {
       mapLabel: "Placeholder — Map with event location",
       mapEmbedTitle: "Fundo Mamacona — Pachacámac",
       transportQuestion: "Need transportation?",
+      taxiDescription:
+        "If you need to travel at times other than the shuttle buses, our event security team can help you arrange a taxi.",
     },
     dressCode: {
       title: "Dress Code",
@@ -1058,13 +1104,13 @@ const en = {
         title: "For women",
         description:
           "Solid-color long dress. Avoid prints, white, ivory, and tones similar to white.",
-        imageLabel: "Placeholder — Women's outfit reference",
+          imageLabel: "Women's dress code",
       },
       men: {
         title: "For men",
         description:
           "Suit and tie. Formal attire.",
-        imageLabel: "Placeholder — Men's outfit reference",
+          imageLabel: "Men's dress code",
       },
     },
     transport: {
@@ -1074,27 +1120,27 @@ const en = {
       designatedDrivers: {
         title: "Designated drivers",
         description:
-          "We'll have designated drivers available so you can enjoy the celebration without worrying about driving.",
-        note: "[Placeholder — schedule, meeting point, and contact]",
+          "We'll have designated drivers available so you can enjoy the celebration without worrying about driving.\n\nArrange your booking when you arrive at the event.",
+        note: "",
       },
       taxi: {
         title: "Taxis",
         description:
-          "We'll have taxi service available to help guests get home at the end of the celebration.",
+          "We'll have taxi service available to help guests get home at the end of the celebration.\n\nArrange your booking when you arrive at the event.",
         note: "",
       },
       buses: {
         title: "Shuttle buses",
         description:
-          "We'll have shuttle buses departing from different points in Lima to take guests to the event.",
-        note: "Schedule and location to be confirmed",
+          "We'll have shuttle buses on the wedding day departing from the InterContinental, Indigo, and Ibis Lima Larco hotels.",
+        note: "More information on schedules coming soon",
       },
     },
   },
   giftRegistry: {
     title: "Gift Registry",
     description:
-      "If you'd like to give us a gift, you can find our registry here.",
+      "Having you with us on our wedding day means the most to us. If you would still like to give us a gift, you can find our registry here.",
     cta: "View gift registry",
     externalNote: "Opens on an external platform",
   },

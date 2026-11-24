@@ -43,6 +43,9 @@ export function DressCodeSection({ variant = "page" }: DressCodeSectionProps) {
             label={dressCode.women.imageLabel}
             title={dressCode.women.title}
             description={dressCode.women.description}
+            imageSrc="/Images/dress-code-women.jpg"
+            imageWidth={1024}
+            imageHeight={512}
           />
         </FadeIn>
 
@@ -51,6 +54,9 @@ export function DressCodeSection({ variant = "page" }: DressCodeSectionProps) {
             label={dressCode.men.imageLabel}
             title={dressCode.men.title}
             description={dressCode.men.description}
+            imageSrc="/Images/dress-code-men.jpg"
+            imageWidth={1024}
+            imageHeight={512}
           />
         </FadeIn>
       </div>

@@ -3,6 +3,7 @@
 import { AtHomeBeautyCard } from "@/components/cards/AtHomeBeautyCard";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { useLanguage } from "@/i18n/LanguageProvider";
+import { withLocaleOverride } from "@/lib/localize-item";
 import type { AtHomeBeautyProvider } from "@/types";
 
 type GetReadyAtHomeServicesProps = {
@@ -12,7 +13,7 @@ type GetReadyAtHomeServicesProps = {
 export function GetReadyAtHomeServices({
   providers,
 }: GetReadyAtHomeServicesProps) {
-  const { t } = useLanguage();
+  const { locale, t } = useLanguage();
   const section = t.getReadyPage;
 
   return (
@@ -32,7 +33,13 @@ export function GetReadyAtHomeServices({
         {providers.map((provider, index) => (
           <FadeIn key={provider.id} delay={index * 80}>
             <AtHomeBeautyCard
-              provider={provider}
+              provider={withLocaleOverride(
+                provider,
+                locale,
+                section.providerOverrides as
+                  | Record<string, Partial<AtHomeBeautyProvider>>
+                  | undefined,
+              )}
               labels={{
                 services: section.servicesLabel,
                 phone: section.phoneLabel,

@@ -2,6 +2,19 @@ import type { Restaurant } from "@/types";
 
 export const restaurants: Restaurant[] = [
   {
+    "id": "quipas",
+    "name": "Quipas",
+    "category": "restaurant",
+    "imageLabel": "Quipas",
+    "imageUrl": "/Images/restaurant-quipas.png",
+    "description": "Restaurante de cocina peruana contemporánea del chef Antoni Ramos, con una propuesta creativa sobre sabores tradicionales e ingredientes de la costa, los Andes y la Amazonía del Perú. Conocido por sus platos bellamente presentados, combinaciones innovadoras y un ambiente cálido e íntimo.",
+    "address": "Calle Alcanfores 174, Miraflores",
+    "district": "Miraflores",
+    "cuisineType": "Peruana",
+    "ambiance": "Fine dining",
+    "googleMapsUrl": "https://maps.google.com/?q=Quipas+Miraflores+Lima"
+  },
+  {
     "id": "la-mar",
     "name": "La Mar",
     "category": "restaurant",
@@ -546,19 +559,6 @@ export const restaurants: Restaurant[] = [
     "cuisineType": "Nikkei",
     "ambiance": "Bar",
     "googleMapsUrl": "https://maps.google.com/?q=Calle+Santa+Luisa+295+San+Isidro+Lima"
-  },
-  {
-    "id": "quipas",
-    "name": "Quipas",
-    "category": "restaurant",
-    "imageLabel": "Quipas",
-    "imageUrl": "/Images/restaurant-quipas.png",
-    "description": "Restaurante de cocina peruana contemporánea del chef Antoni Ramos, con una propuesta creativa sobre sabores tradicionales e ingredientes de la costa, los Andes y la Amazonía del Perú. Conocido por sus platos bellamente presentados, combinaciones innovadoras y un ambiente cálido e íntimo.",
-    "address": "Calle Alcanfores 174, Miraflores",
-    "district": "Miraflores",
-    "cuisineType": "Peruana",
-    "ambiance": "Fine dining",
-    "googleMapsUrl": "https://maps.google.com/?q=Quipas+Miraflores+Lima"
   }
 ];
 
